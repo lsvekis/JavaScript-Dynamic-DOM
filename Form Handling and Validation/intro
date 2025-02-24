@@ -1,0 +1,15 @@
+In this section you will learn how to interact with and validate form elements using the DOM. You’ll cover how to access form fields, perform real‑time validations, handle form submission with JavaScript (preventing the default behavior), and even update the form dynamically by adding or removing fields and displaying feedback messages.
+Topics Covered:
+Accessing Form Elements:
+Retrieve input fields, checkboxes, selects, and other form elements using DOM methods.
+Real‑Time Validation:
+Listen for input events and validate data on the fly to provide immediate user feedback.
+Form Submission:
+Prevent the default submission action, process the form data, and handle it via JavaScript.
+Dynamic Form Updates:
+Add or remove form fields and display feedback messages dynamically to enhance user experience.
+Learning Objectives:
+Manipulate and interact with form elements using the DOM.
+Validate and process form data before submission.
+Enhance user experience with immediate feedback and dynamic form changes.
+Below are 50 coding exercises with clear instructions and starter code to guide you through these concepts.
