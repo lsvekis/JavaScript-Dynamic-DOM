@@ -1,0 +1,6 @@
+Section 1: DOM Basics and Fundamentals
+Overview
+In this section, you will learn the foundation of interacting with web pages using JavaScript by understanding the Document Object Model (DOM). By the end of this module, you should be able to:
+Understand the structure of the DOM: Learn what the DOM is, how it represents an HTML document, and why it matters.
+Access HTML elements from JavaScript: Practice using methods like document.getElementById, document.getElementsByClassName, and document.getElementsByTagName.
+Grasp text vs. HTML content manipulation: Understand and differentiate between properties such as innerHTML and innerText.
