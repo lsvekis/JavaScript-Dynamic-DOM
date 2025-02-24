@@ -1,0 +1,12 @@
+In this section you will learn how to dynamically modify an element’s classes and inline styles to change its appearance and behavior. You will explore three key areas:
+Class Management:
+Learn how to add, remove, toggle, and check for classes on an element using the classList API. This is essential for dynamically applying CSS rules.
+Inline Styling:
+Directly update or read an element’s inline styles via the style property. This is useful for making quick style adjustments or animations without changing external CSS.
+Computed Styles:
+Use window.getComputedStyle to read the final, computed styles of an element. This helps you debug and adjust layouts by understanding which styles are actually being applied.
+Learning Objectives:
+Dynamically modify element classes to change styling and behavior.
+Manage inline styles to alter an element’s appearance in real time.
+Read computed styles for debugging and layout adjustments.
+Below are 50 coding exercises that will help you master these techniques. Each exercise includes a learning objective, clear instructions, and starter code.
