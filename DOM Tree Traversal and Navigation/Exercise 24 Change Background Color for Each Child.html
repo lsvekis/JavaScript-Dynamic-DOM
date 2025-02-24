@@ -1,0 +1,9 @@
+<div id="colorChildren">
+<p>Child 1</p>
+<p>Child 2</p>
+<p>Child 3</p>
+</div>
+<script>
+Array.from(document.getElementById('colorChildren').children)
+.forEach(child => child.style.backgroundColor = "lightgreen");
+</script>

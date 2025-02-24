@@ -1,0 +1,14 @@
+<div id="siblingTraverse">
+<p>First</p>
+<p>Second</p>
+<p>Third</p>
+</div>
+<script>
+let node = document.getElementById('siblingTraverse').firstChild;
+while (node) {
+if (node.nodeType === 1) { // Element node
+console.log("Using nextSibling:", node.tagName);
+}
+node = node.nextSibling;
+}
+</script>

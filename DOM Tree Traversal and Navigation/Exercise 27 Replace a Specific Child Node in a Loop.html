@@ -1,0 +1,15 @@
+<ul id="replaceList">
+<li>Old Item</li>
+<li>Item 2</li>
+<li>Old Item</li>
+</ul>
+<script>
+const listItems = document.getElementById('replaceList').children;
+Array.from(listItems).forEach(item => {
+if (item.textContent.includes("Old")) {
+const newItem = document.createElement('li');
+newItem.textContent = "New Item";
+item.parentNode.replaceChild(newItem, item);
+}
+});
+</script>

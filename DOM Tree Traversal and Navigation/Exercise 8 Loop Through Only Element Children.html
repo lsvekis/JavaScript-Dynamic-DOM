@@ -1,0 +1,11 @@
+<ul id="elementList">
+<li>First</li>
+<li>Second</li>
+<li>Third</li>
+</ul>
+<script>
+const elementList = document.getElementById('elementList');
+Array.from(elementList.children).forEach(child => {
+console.log(child.innerText);
+});
+</script>

@@ -1,0 +1,12 @@
+<div id="ancestorDemo">
+<p id="deepNode">Deep Node</p>
+</div>
+<script>
+function logAncestors(el) {
+while (el.parentElement) {
+el = el.parentElement;
+console.log(el.tagName);
+}
+}
+logAncestors(document.getElementById('deepNode'));
+</script>

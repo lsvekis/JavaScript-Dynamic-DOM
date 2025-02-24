@@ -1,0 +1,9 @@
+<div id="mixed">
+Hello, <span>World!</span> How are you?
+</div>
+<script>
+const mixedDiv = document.getElementById('mixed');
+mixedDiv.childNodes.forEach(node => {
+console.log("Node Type:", node.nodeType, "Content:", node.textContent.trim());
+});
+</script>

@@ -1,0 +1,16 @@
+<div class="wrapper">
+<div>
+<p id="deepChild">Deep Child</p>
+</div>
+</div>
+<script>
+function getClosestAncestor(el, className) {
+while (el && !el.classList.contains(className)) {
+el = el.parentElement;
+}
+return el;
+}
+const deepChild = document.getElementById('deepChild');
+const ancestor = getClosestAncestor(deepChild, 'wrapper');
+console.log("Closest ancestor with class 'wrapper':", ancestor);
+</script>

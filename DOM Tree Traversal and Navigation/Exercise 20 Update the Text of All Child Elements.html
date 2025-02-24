@@ -1,0 +1,9 @@
+<div id="updateChildren">
+<p>First</p>
+<p>Second</p>
+<p>Third</p>
+</div>
+<script>
+const children = document.getElementById('updateChildren').children;
+Array.from(children).forEach(child => child.textContent += " - updated");
+</script>

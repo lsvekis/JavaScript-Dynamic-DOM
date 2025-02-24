@@ -1,0 +1,15 @@
+<div id="attrSiblings">
+<div>One</div>
+<div data-target="true">Target Div</div>
+<div>Three</div>
+</div>
+<script>
+let currentSibling = document.getElementById('attrSiblings').firstElementChild;
+while (currentSibling) {
+if (currentSibling.getAttribute('data-target') === "true") {
+console.log("Found target sibling:", currentSibling.innerText);
+break;
+}
+currentSibling = currentSibling.nextElementSibling;
+}
+</script>

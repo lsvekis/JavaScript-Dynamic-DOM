@@ -1,0 +1,11 @@
+<div id="nestedExample">
+<p>Some text</p>
+</div>
+<script>
+let node = document.querySelector('#nestedExample p');
+while (node) {
+console.log(node.nodeName);
+if (node.nodeName === "HTML") break;
+node = node.parentNode;
+}
+</script>

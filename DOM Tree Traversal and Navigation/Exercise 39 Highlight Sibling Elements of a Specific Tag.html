@@ -1,0 +1,12 @@
+<div id="tagGroup">
+<p>Paragraph 1</p>
+<span>Span 1</span>
+<p>Paragraph 2</p>
+<div>Div 1</div>
+</div>
+<script>
+const base = document.querySelector('#tagGroup p');
+Array.from(base.parentNode.children)
+.filter(el => el.tagName === 'P')
+.forEach(el => el.style.backgroundColor = "lightyellow");
+</script>

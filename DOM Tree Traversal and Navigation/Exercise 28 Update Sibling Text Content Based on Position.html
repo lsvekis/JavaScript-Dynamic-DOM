@@ -1,0 +1,9 @@
+<ul id="indexList2">
+<li>Alpha</li>
+<li>Beta</li>
+<li>Gamma</li>
+</ul>
+<script>
+Array.from(document.getElementById('indexList2').children)
+.forEach((item, index) => item.textContent += ` (${index})`);
+</script>

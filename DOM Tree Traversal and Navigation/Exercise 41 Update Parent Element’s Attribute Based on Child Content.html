@@ -1,0 +1,8 @@
+<div id="attrParent">
+<p id="updateChild">Update me</p>
+</div>
+<script>
+const updateChild = document.getElementById('updateChild');
+updateChild.parentNode.setAttribute('data-updated', 'true');
+console.log("Parent after update:", updateChild.parentNode.outerHTML);
+</script>

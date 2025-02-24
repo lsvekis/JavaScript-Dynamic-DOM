@@ -1,0 +1,18 @@
+<table id="myTable" border="1">
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+</tr>
+<tr>
+<td>Cell 3</td>
+<td>Cell 4</td>
+</tr>
+</table>
+<script>
+const rows = document.getElementById('myTable').rows;
+Array.from(rows).forEach(row => {
+Array.from(row.cells).forEach(cell => {
+cell.innerText += " Updated";
+});
+});
+</script>

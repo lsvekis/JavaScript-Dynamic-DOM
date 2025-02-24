@@ -1,0 +1,12 @@
+<article id="article">
+<section id="section">
+<div id="deep">Deep Nested Div</div>
+</section>
+</article>
+<script>
+let currentNode = document.getElementById('deep');
+while (currentNode) {
+console.log(currentNode.nodeName);
+currentNode = currentNode.parentNode;
+}
+</script>

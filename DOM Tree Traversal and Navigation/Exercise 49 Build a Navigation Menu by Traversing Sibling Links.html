@@ -1,0 +1,15 @@
+<nav id="navMenu">
+<a href="#">Home</a>
+<a href="#" class="active">About</a>
+<a href="#">Contact</a>
+</nav>
+<script>
+const activeLink = document.querySelector('#navMenu a.active');
+let siblingLink = activeLink.parentNode.firstElementChild;
+while (siblingLink) {
+if (siblingLink !== activeLink) {
+siblingLink.style.opacity = "0.6";
+}
+siblingLink = siblingLink.nextElementSibling;
+}
+</script>

@@ -1,0 +1,12 @@
+<div id="middleContainer">
+<p>First</p>
+<p>Second</p>
+<p>Third</p>
+<p>Fourth</p>
+<p>Fifth</p>
+</div>
+<script>
+const children = document.getElementById('middleContainer').children;
+const middleIndex = Math.floor(children.length / 2);
+children[middleIndex].style.fontWeight = "bold";
+</script>

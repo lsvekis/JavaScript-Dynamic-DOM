@@ -1,0 +1,9 @@
+<div id="testDiv">
+
+<p>Actual Child</p>
+</div>
+<script>
+const testDiv = document.getElementById('testDiv');
+console.log("firstChild:", testDiv.firstChild);           // Likely a text node (whitespace)
+console.log("firstElementChild:", testDiv.firstElementChild); // The <p> element
+</script>

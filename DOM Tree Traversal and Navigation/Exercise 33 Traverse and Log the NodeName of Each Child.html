@@ -1,0 +1,9 @@
+<div id="nodeNameDemo">
+<p>Para</p>
+<span>Span</span>
+<a href="#">Link</a>
+</div>
+<script>
+Array.from(document.getElementById('nodeNameDemo').children)
+.forEach(child => console.log(child.nodeName));
+</script>

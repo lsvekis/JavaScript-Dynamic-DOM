@@ -1,0 +1,9 @@
+<script>
+let nodeBack = document.getElementById('siblingTraverse').lastChild;
+while (nodeBack) {
+if (nodeBack.nodeType === 1) {
+console.log("Using previousSibling:", nodeBack.tagName);
+}
+nodeBack = nodeBack.previousSibling;
+}
+</script>

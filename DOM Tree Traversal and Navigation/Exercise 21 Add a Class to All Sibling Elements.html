@@ -1,0 +1,9 @@
+<ul id="siblingList">
+<li>Alpha</li>
+<li>Beta</li>
+<li>Gamma</li>
+</ul>
+<script>
+const listItems = document.getElementById('siblingList').children;
+Array.from(listItems).forEach(item => item.classList.add('highlight'));
+</script>

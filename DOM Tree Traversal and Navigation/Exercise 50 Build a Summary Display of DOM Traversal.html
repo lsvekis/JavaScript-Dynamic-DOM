@@ -1,0 +1,35 @@
+<div id="summaryContent">
+<h2>Title</h2>
+<p>Paragraph text.</p>
+<ul>
+<li>List item 1</li>
+<li>List item 2</li>
+</ul>
+</div>
+<div id="traversalSummary"></div>
+<script>
+const content = document.getElementById('summaryContent');
+const childCount = content.getElementsByTagName('*').length;
+
+const selected = content.querySelector('p');
+let siblingCount = 0;
+let node = selected.parentNode.firstElementChild;
+while (node) {
+if (node !== selected) siblingCount++;
+node = node.nextElementSibling;
+}
+
+let ancestorLevels = 0;
+node = selected;
+while (node.parentElement) {
+ancestorLevels++;
+node = node.parentElement;
+}
+
+const summaryDiv = document.getElementById('traversalSummary');
+summaryDiv.innerHTML = `
+<p>Total descendant elements in container: ${childCount}</p>
+<p>Siblings of selected paragraph: ${siblingCount}</p>
+<p>Ancestor levels from selected paragraph to &lt;html&gt;: ${ancestorLevels}</p>
+`;
+</script>

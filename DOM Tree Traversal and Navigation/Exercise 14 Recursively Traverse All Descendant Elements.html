@@ -1,0 +1,19 @@
+<div id="recursive">
+<section>
+<p>Paragraph inside section</p>
+</section>
+<article>
+<div>
+<span>Deep span</span>
+</div>
+</article>
+</div>
+<script>
+function traverse(node) {
+if (node.nodeType === 1) { // Element node
+console.log(node.tagName);
+Array.from(node.children).forEach(child => traverse(child));
+}
+}
+traverse(document.getElementById('recursive'));
+</script>

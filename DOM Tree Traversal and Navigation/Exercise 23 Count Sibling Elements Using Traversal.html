@@ -1,0 +1,20 @@
+<div id="countSiblings">
+<p>One</p>
+<p id="middle">Two</p>
+<p>Three</p>
+<p>Four</p>
+</div>
+<script>
+let count = 0;
+let node = document.getElementById('middle').previousElementSibling;
+while (node) {
+count++;
+node = node.previousElementSibling;
+}
+node = document.getElementById('middle').nextElementSibling;
+while (node) {
+count++;
+node = node.nextElementSibling;
+}
+console.log("Total siblings (excluding self):", count);
+</script>

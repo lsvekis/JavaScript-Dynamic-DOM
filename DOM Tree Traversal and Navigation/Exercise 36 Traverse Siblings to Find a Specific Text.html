@@ -1,0 +1,14 @@
+<div id="startDiv">Start</div>
+<div>Not this one</div>
+<div>Target</div>
+<div>Another one</div>
+<script>
+let current = document.getElementById('startDiv').nextElementSibling;
+while (current) {
+if (current.innerText.includes("Target")) {
+console.log("Found target:", current.innerText);
+break;
+}
+current = current.nextElementSibling;
+}
+</script>

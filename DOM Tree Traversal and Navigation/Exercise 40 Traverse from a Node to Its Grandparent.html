@@ -1,0 +1,10 @@
+<div id="grandparent">
+<div id="parent">
+<p id="child">Child Text</p>
+</div>
+</div>
+<script>
+const child = document.getElementById('child');
+const grandparent = child.parentNode.parentNode;
+console.log("Grandparent Tag:", grandparent.tagName);
+</script>

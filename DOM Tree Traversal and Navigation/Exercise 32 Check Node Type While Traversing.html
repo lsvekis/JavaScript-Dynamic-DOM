@@ -1,0 +1,12 @@
+<div id="nodeTypeDemo">
+Some text
+<span>Element</span>
+More text
+</div>
+<script>
+document.getElementById('nodeTypeDemo').childNodes.forEach(node => {
+if (node.nodeType === 1) {
+console.log("Element node:", node.tagName);
+}
+});
+</script>

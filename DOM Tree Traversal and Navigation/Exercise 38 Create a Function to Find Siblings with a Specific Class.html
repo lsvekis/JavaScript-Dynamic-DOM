@@ -1,0 +1,13 @@
+<div id="siblingGroup">
+<p class="active">One</p>
+<p>Two</p>
+<p class="active">Three</p>
+<p>Four</p>
+</div>
+<script>
+function getSiblingsWithClass(el, className) {
+return Array.from(el.parentNode.children).filter(sib => sib !== el && sib.classList.contains(className));
+}
+const firstActive = document.querySelector('#siblingGroup .active');
+console.log("Active siblings:", getSiblingsWithClass(firstActive, 'active'));
+</script>

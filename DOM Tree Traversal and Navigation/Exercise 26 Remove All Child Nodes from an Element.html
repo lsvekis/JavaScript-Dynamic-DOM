@@ -1,0 +1,12 @@
+<div id="clearContainer">
+<p>Child A</p>
+<p>Child B</p>
+<p>Child C</p>
+</div>
+<script>
+const clearContainer = document.getElementById('clearContainer');
+while (clearContainer.firstChild) {
+clearContainer.removeChild(clearContainer.firstChild);
+}
+console.log("Container cleared:", clearContainer.innerHTML);
+</script>

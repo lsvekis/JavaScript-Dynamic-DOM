@@ -1,0 +1,12 @@
+<ul id="backwardList">
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+</ul>
+<script>
+let item = document.getElementById('backwardList').lastElementChild;
+while (item) {
+console.log(item.innerText);
+item = item.previousElementSibling;
+}
+</script>

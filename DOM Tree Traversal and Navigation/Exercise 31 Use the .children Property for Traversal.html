@@ -1,0 +1,9 @@
+<div id="childDemo">
+Text node
+<span>Span Element</span>
+<p>Paragraph Element</p>
+</div>
+<script>
+Array.from(document.getElementById('childDemo').children)
+.forEach(child => console.log(child.tagName));
+</script>

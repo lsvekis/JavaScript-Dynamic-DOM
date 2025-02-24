@@ -1,0 +1,17 @@
+<div id="countTree">
+<p>Paragraph <span>with span</span></p>
+<div>
+<p>Another paragraph</p>
+</div>
+</div>
+<script>
+function countElements(el) {
+let count = 0;
+Array.from(el.children).forEach(child => {
+count += 1 + countElements(child);
+});
+return count;
+}
+const total = countElements(document.getElementById('countTree'));
+console.log("Total elements in subtree:", total);
+</script>

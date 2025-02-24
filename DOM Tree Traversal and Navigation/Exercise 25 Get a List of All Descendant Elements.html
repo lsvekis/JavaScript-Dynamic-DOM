@@ -1,0 +1,21 @@
+<div id="descendants">
+<section>
+<p>Paragraph 1</p>
+</section>
+<article>
+<div>
+<span>Deep Span</span>
+</div>
+</article>
+</div>
+<script>
+const descendants = [];
+function collectDescendants(el) {
+Array.from(el.children).forEach(child => {
+descendants.push(child.tagName);
+collectDescendants(child);
+});
+}
+collectDescendants(document.getElementById('descendants'));
+console.log("Descendants:", descendants);
+</script>

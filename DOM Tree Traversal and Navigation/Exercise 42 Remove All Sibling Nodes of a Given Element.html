@@ -1,0 +1,13 @@
+<div id="siblingsContainer">
+<p>Keep Me</p>
+<p>Remove Me</p>
+<p>Remove Me Too</p>
+</div>
+<script>
+const container = document.getElementById('siblingsContainer');
+const target = container.firstElementChild;
+Array.from(container.children).forEach(child => {
+if (child !== target) child.remove();
+});
+console.log("After removal:", container.innerHTML);
+</script>
