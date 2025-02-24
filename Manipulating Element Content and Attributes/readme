@@ -1,0 +1,12 @@
+In this section, you’ll learn how to dynamically modify the content and attributes of HTML elements using vanilla JavaScript. You will explore two main areas:
+Content Updates:
+.textContent: Allows you to change the plain text inside an element. It treats everything as plain text.
+.innerHTML: Lets you change the HTML inside an element. This property parses HTML tags so you can inject complex structures.
+Attribute Manipulation:
+Reading and setting standard attributes (such as src, href, etc.) using methods like .getAttribute(), .setAttribute(), and even directly via properties.
+Data Attributes & dataset: Use the dataset property to store and access custom data on HTML elements (e.g., data-user-id, data-role).
+Learning Objectives:
+Dynamically modify the content of elements.
+Update or remove element attributes effectively.
+Utilize custom data attributes for flexible coding.
+By working through the exercises below, you’ll gain hands-on experience with these methods and techniques, which are essential for creating interactive and dynamic web pages.
