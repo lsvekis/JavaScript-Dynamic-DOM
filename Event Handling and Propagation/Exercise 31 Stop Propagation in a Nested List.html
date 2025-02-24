@@ -1,0 +1,18 @@
+<ul id="nestedList">
+<li>Item 1</li>
+<li>
+Item 2
+<ul>
+<li id="innerItem">Inner Item</li>
+</ul>
+</li>
+</ul>
+<script>
+document.getElementById('nestedList').addEventListener('click', () => {
+console.log("Parent list clicked");
+});
+document.getElementById('innerItem').addEventListener('click', (event) => {
+event.stopPropagation();
+console.log("Inner item clicked, propagation stopped");
+});
+</script>

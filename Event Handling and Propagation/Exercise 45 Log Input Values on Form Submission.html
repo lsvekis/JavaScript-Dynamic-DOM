@@ -1,0 +1,12 @@
+<form id="logForm">
+<input type="text" name="first" placeholder="First Name">
+<input type="text" name="last" placeholder="Last Name">
+<button type="submit">Submit</button>
+</form>
+<script>
+document.getElementById('logForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const inputs = event.target.querySelectorAll('input');
+inputs.forEach(input => console.log(input.name + ":", input.value));
+});
+</script>

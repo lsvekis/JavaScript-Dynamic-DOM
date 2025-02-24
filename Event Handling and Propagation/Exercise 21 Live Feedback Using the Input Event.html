@@ -1,0 +1,7 @@
+<input id="liveInput" placeholder="Type here">
+<div id="liveOutput">Live output...</div>
+<script>
+document.getElementById('liveInput').addEventListener('input', (event) => {
+document.getElementById('liveOutput').innerText = event.target.value;
+});
+</script>

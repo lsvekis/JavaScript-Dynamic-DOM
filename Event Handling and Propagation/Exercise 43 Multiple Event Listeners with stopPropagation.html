@@ -1,0 +1,11 @@
+<div id="multiListener" style="padding:20px; border:1px solid #000;">Click Me</div>
+<script>
+const multiListener = document.getElementById('multiListener');
+multiListener.addEventListener('click', (event) => {
+console.log("First listener triggered");
+event.stopPropagation();
+});
+multiListener.addEventListener('click', () => {
+console.log("Second listener should not trigger");
+});
+</script>

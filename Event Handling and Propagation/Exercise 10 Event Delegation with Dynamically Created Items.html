@@ -1,0 +1,15 @@
+<ul id="dynamicList"></ul>
+<button id="addItem">Add Item</button>
+<script>
+const dynamicList = document.getElementById('dynamicList');
+document.getElementById('addItem').addEventListener('click', () => {
+const li = document.createElement('li');
+li.textContent = "New Item " + (dynamicList.children.length + 1);
+dynamicList.appendChild(li);
+});
+dynamicList.addEventListener('click', (event) => {
+if (event.target.tagName === 'LI') {
+console.log("Dynamically clicked:", event.target.innerText);
+}
+});
+</script>

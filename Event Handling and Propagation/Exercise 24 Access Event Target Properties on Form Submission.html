@@ -1,0 +1,10 @@
+<form id="formEvent">
+<input type="text" name="data">
+<button type="submit">Submit</button>
+</form>
+<script>
+document.getElementById('formEvent').addEventListener('submit', (event) => {
+event.preventDefault();
+console.log("Form submitted. Event target:", event.target);
+});
+</script>

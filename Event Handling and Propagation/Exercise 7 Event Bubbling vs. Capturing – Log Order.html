@@ -1,0 +1,15 @@
+<div id="parentCapture" style="padding:20px; border: 1px solid black;">
+Parent
+<div id="childCapture" style="padding:20px; border: 1px solid gray;">Child</div>
+</div>
+<script>
+document.getElementById('parentCapture').addEventListener('click', () => {
+console.log("Parent listener (capturing)");
+}, true); // capturing
+document.getElementById('childCapture').addEventListener('click', () => {
+console.log("Child listener (bubbling)");
+});
+document.getElementById('parentCapture').addEventListener('click', () => {
+console.log("Parent listener (bubbling)");
+});
+</script>

@@ -1,0 +1,13 @@
+<div id="calculator">
+<button>1</button>
+<button>2</button>
+<button>+</button>
+<button>=</button>
+</div>
+<script>
+document.getElementById('calculator').addEventListener('click', (event) => {
+if (event.target.tagName === 'BUTTON') {
+console.log("Button pressed:", event.target.innerText);
+}
+});
+</script>

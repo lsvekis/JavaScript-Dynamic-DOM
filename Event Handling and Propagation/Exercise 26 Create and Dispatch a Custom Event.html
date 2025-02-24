@@ -1,0 +1,9 @@
+<div id="customEventDiv">Custom Event Div</div>
+<script>
+const customEventDiv = document.getElementById('customEventDiv');
+customEventDiv.addEventListener('myCustomEvent', (event) => {
+console.log("Custom event received with data:", event.detail);
+});
+const eventObj = new CustomEvent('myCustomEvent', { detail: { info: "Hello Custom" } });
+customEventDiv.dispatchEvent(eventObj);
+</script>

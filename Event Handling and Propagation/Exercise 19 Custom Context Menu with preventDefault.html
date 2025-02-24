@@ -1,0 +1,7 @@
+<div id="contextDiv" style="padding:20px; border: 1px solid #333;">Right-click on me</div>
+<script>
+document.getElementById('contextDiv').addEventListener('contextmenu', (event) => {
+event.preventDefault();
+console.log("Custom context menu");
+});
+</script>

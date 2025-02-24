@@ -1,0 +1,12 @@
+<ul id="delegationList">
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ul>
+<script>
+document.getElementById('delegationList').addEventListener('click', (event) => {
+if (event.target.tagName === 'LI') {
+console.log("Clicked item:", event.target.innerText);
+}
+});
+</script>

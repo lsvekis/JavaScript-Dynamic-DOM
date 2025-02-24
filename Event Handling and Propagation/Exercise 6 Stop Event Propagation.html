@@ -1,0 +1,13 @@
+<div id="outer" style="padding:20px; border: 1px solid blue;">
+Outer Div
+<div id="inner" style="padding:20px; border: 1px solid red;">Inner Div</div>
+</div>
+<script>
+document.getElementById('outer').addEventListener('click', () => {
+console.log("Outer clicked");
+});
+document.getElementById('inner').addEventListener('click', (event) => {
+event.stopPropagation();
+console.log("Inner clicked, propagation stopped");
+});
+</script>

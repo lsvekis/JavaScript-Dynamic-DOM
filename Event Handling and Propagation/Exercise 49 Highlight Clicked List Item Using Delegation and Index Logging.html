@@ -1,0 +1,20 @@
+<ul id="highlightList">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<script>
+const listItems = document.querySelectorAll('#highlightList li');
+document.getElementById('highlightList').addEventListener('click', (event) => {
+if (event.target.tagName === 'LI') {
+listItems.forEach((item, idx) => {
+if (item === event.target) {
+item.style.backgroundColor = "yellow";
+console.log("Clicked item index:", idx);
+} else {
+item.style.backgroundColor = "";
+}
+});
+}
+});
+</script>

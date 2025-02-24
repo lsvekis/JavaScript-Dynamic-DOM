@@ -1,0 +1,10 @@
+<div id="hoverBorder" style="padding:20px;">Hover over me</div>
+<script>
+const hoverBorder = document.getElementById('hoverBorder');
+hoverBorder.addEventListener('mouseover', () => {
+hoverBorder.style.border = "2px solid blue";
+});
+hoverBorder.addEventListener('mouseout', () => {
+hoverBorder.style.border = "none";
+});
+</script>

@@ -1,0 +1,13 @@
+<div id="eventSummaryDiv" style="padding:20px; border:1px solid #000; cursor: pointer;">Click me for event details</div>
+<div id="eventOutput" style="margin-top:20px;"></div>
+<script>
+document.getElementById('eventSummaryDiv').addEventListener('click', (event) => {
+const output = document.getElementById('eventOutput');
+output.innerHTML = `
+<p>Event Type: ${event.type}</p>
+<p>Event Target: ${event.target.tagName}</p>
+<p>Event CurrentTarget: ${event.currentTarget.tagName}</p>
+<p>Event Timestamp: ${event.timeStamp}</p>
+`;
+});
+</script>

@@ -1,0 +1,11 @@
+<button id="immediateBtn">Click Me</button>
+<script>
+const immediateBtn = document.getElementById('immediateBtn');
+immediateBtn.addEventListener('click', (event) => {
+console.log("First listener triggered");
+event.stopImmediatePropagation();
+});
+immediateBtn.addEventListener('click', () => {
+console.log("Second listener should not trigger");
+});
+</script>

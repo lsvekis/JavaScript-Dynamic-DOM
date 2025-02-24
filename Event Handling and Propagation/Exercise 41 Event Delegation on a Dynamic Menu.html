@@ -1,0 +1,17 @@
+<div id="menuContainer"></div>
+<button id="addMenuItem">Add Menu Item</button>
+<script>
+const menuContainer = document.getElementById('menuContainer');
+document.getElementById('addMenuItem').addEventListener('click', () => {
+const item = document.createElement('div');
+item.textContent = "Menu Item " + (menuContainer.children.length + 1);
+item.style.padding = "5px";
+item.style.border = "1px solid #ccc";
+menuContainer.appendChild(item);
+});
+menuContainer.addEventListener('click', (event) => {
+if (event.target !== menuContainer) {
+console.log("Clicked on menu item:", event.target.innerText);
+}
+});
+</script>

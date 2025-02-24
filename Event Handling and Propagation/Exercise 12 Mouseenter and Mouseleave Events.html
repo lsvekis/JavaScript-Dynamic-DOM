@@ -1,0 +1,10 @@
+<div id="hoverBox" style="padding:20px; border: 1px solid #000;">Hover over me</div>
+<script>
+const hoverBox = document.getElementById('hoverBox');
+hoverBox.addEventListener('mouseenter', () => {
+hoverBox.style.border = "3px solid orange";
+});
+hoverBox.addEventListener('mouseleave', () => {
+hoverBox.style.border = "1px solid #000";
+});
+</script>

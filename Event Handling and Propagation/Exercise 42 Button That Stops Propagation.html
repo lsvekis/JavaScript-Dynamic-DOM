@@ -1,0 +1,13 @@
+<div id="propagationDiv" style="padding:20px; border:1px solid #000;">
+Parent Div
+<button id="stopBtn">Click Me</button>
+</div>
+<script>
+document.getElementById('propagationDiv').addEventListener('click', () => {
+console.log("Parent div clicked");
+});
+document.getElementById('stopBtn').addEventListener('click', (event) => {
+event.stopPropagation();
+console.log("Button clicked, propagation stopped");
+});
+</script>

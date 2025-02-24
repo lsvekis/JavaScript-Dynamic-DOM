@@ -1,0 +1,12 @@
+<div id="scrollContainer" style="width: 200px; height: 100px; overflow: auto; border: 1px solid #000;">
+<p>Line 1</p>
+<p>Line 2</p>
+<p>Line 3</p>
+<p>Line 4</p>
+<p>Line 5</p>
+</div>
+<script>
+document.getElementById('scrollContainer').addEventListener('scroll', (event) => {
+console.log("Scroll position:", event.target.scrollTop);
+});
+</script>

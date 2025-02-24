@@ -1,0 +1,7 @@
+<div id="dblClickDiv" style="padding:20px; border: 1px solid gray;">Double-click me</div>
+<script>
+document.getElementById('dblClickDiv').addEventListener('dblclick', (event) => {
+event.target.classList.toggle("dblclicked");
+console.log("Double-click toggled class");
+});
+</script>

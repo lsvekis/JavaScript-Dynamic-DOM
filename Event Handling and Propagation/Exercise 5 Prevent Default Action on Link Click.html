@@ -1,0 +1,7 @@
+<a href="https://www.example.com" id="preventLink">Don't go there</a>
+<script>
+document.getElementById('preventLink').addEventListener('click', (event) => {
+event.preventDefault();
+console.log("Default action prevented.");
+});
+</script>

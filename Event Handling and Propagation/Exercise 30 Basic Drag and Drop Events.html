@@ -1,0 +1,19 @@
+<div id="dragItem" draggable="true" style="width:100px; height:100px; background:lightblue;">Drag me</div>
+<div id="dropArea" style="width:200px; height:200px; border:2px dashed #ccc; margin-top:20px;">Drop here</div>
+<script>
+const dragItem = document.getElementById('dragItem');
+const dropArea = document.getElementById('dropArea');
+dragItem.addEventListener('dragstart', (event) => {
+event.dataTransfer.setData("text/plain", event.target.id);
+});
+dropArea.addEventListener('dragover', (event) => {
+event.preventDefault();
+});
+dropArea.addEventListener('drop', (event) => {
+event.preventDefault();
+const id = event.dataTransfer.getData("text/plain");
+const draggableElement = document.getElementById(id);
+dropArea.appendChild(draggableElement);
+console.log("Element dropped");
+});
+</script>

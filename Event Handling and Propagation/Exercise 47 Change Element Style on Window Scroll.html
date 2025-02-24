@@ -1,0 +1,6 @@
+<header id="scrollHeader" style="padding:20px; background: lightblue;">Header</header>
+<script>
+window.addEventListener('scroll', () => {
+document.getElementById('scrollHeader').style.backgroundColor = window.scrollY > 50 ? "salmon" : "lightblue";
+});
+</script>

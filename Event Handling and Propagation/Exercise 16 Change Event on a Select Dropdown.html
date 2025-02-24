@@ -1,0 +1,10 @@
+<select id="selectBox">
+<option value="apple">Apple</option>
+<option value="banana">Banana</option>
+<option value="cherry">Cherry</option>
+</select>
+<script>
+document.getElementById('selectBox').addEventListener('change', (event) => {
+console.log("Selected:", event.target.value);
+});
+</script>

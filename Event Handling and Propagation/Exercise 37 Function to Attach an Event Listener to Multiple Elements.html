@@ -1,0 +1,10 @@
+<div class="multi">Div 1</div>
+<div class="multi">Div 2</div>
+<script>
+function addListenerToAll(selector, eventType, handler) {
+document.querySelectorAll(selector).forEach(el => el.addEventListener(eventType, handler));
+}
+addListenerToAll('.multi', 'click', (e) => {
+console.log("Clicked:", e.target.innerText);
+});
+</script>

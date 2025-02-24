@@ -1,0 +1,16 @@
+<button class="removeBtn">Button 1</button>
+<button class="removeBtn">Button 2</button>
+<button class="removeBtn">Button 3</button>
+<script>
+const buttons = document.querySelectorAll('.removeBtn');
+function handleClick(event) {
+console.log("Clicked:", event.target.innerText);
+}
+buttons.forEach(btn => btn.addEventListener('click', handleClick));
+// Remove listener from the second button after a click
+buttons[1].addEventListener('click', function removeHandler() {
+buttons[1].removeEventListener('click', handleClick);
+console.log("Listener removed from Button 2");
+buttons[1].removeEventListener('click', removeHandler);
+});
+</script>

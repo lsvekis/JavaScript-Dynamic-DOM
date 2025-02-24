@@ -1,0 +1,9 @@
+<input id="charInput" placeholder="No numbers allowed">
+<script>
+document.getElementById('charInput').addEventListener('keydown', (event) => {
+if (/[0-9]/.test(event.key)) {
+event.preventDefault();
+console.log("Numbers are not allowed");
+}
+});
+</script>

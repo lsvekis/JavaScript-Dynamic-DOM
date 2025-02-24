@@ -1,0 +1,15 @@
+<ul id="dynamicDelegation"></ul>
+<button id="addListItem">Add List Item</button>
+<script>
+const dynamicDelegation = document.getElementById('dynamicDelegation');
+document.getElementById('addListItem').addEventListener('click', () => {
+const li = document.createElement('li');
+li.textContent = "New Delegated Item";
+dynamicDelegation.appendChild(li);
+});
+dynamicDelegation.addEventListener('click', (event) => {
+if (event.target.tagName === 'LI') {
+console.log("Delegated click on:", event.target.innerText);
+}
+});
+</script>
