@@ -1,0 +1,11 @@
+<ul id="bindList"></ul>
+<script>
+let items = ["One", "Two", "Three"];
+function renderList(data) {
+document.getElementById('bindList').innerHTML = data.map(item => `<li>${item}</li>`).join("");
+}
+renderList(items);
+// Later, update data and re-render:
+items.push("Four");
+renderList(items);
+</script>

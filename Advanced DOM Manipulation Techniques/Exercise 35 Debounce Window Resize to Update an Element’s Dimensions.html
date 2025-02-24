@@ -1,0 +1,12 @@
+<div id="resizeDiv" style="background: lightblue; height: 50px;">Resize me</div>
+<script>
+let resizeDebounce;
+function updateWidth() {
+document.getElementById('resizeDiv').style.width = (window.innerWidth * 0.5) + "px";
+}
+window.addEventListener('resize', () => {
+clearTimeout(resizeDebounce);
+resizeDebounce = setTimeout(updateWidth, 300);
+});
+updateWidth();
+</script>

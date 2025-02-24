@@ -1,0 +1,12 @@
+<input type="range" id="slider" min="0" max="100" value="50">
+<span id="sliderValue">50</span>
+<script>
+let throttle = false;
+document.getElementById('slider').addEventListener('input', (event) => {
+if (!throttle) {
+document.getElementById('sliderValue').innerText = event.target.value;
+throttle = true;
+setTimeout(() => throttle = false, 100);
+}
+});
+</script>

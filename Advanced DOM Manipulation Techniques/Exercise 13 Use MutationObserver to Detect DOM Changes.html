@@ -1,0 +1,13 @@
+<div id="observeDiv">Original Content</div>
+<script>
+const observer = new MutationObserver((mutationsList) => {
+mutationsList.forEach(mutation => {
+console.log("Mutation observed:", mutation);
+});
+});
+observer.observe(document.getElementById('observeDiv'), { childList: true, subtree: true });
+// Change content after 1 second
+setTimeout(() => {
+document.getElementById('observeDiv').textContent = "Updated Content";
+}, 1000);
+</script>

@@ -1,0 +1,15 @@
+<ul id="textList">
+<li>Original</li>
+<li>Original</li>
+</ul>
+<script>
+Array.from(document.getElementById('textList').children).forEach((li, index) => {
+li.innerText = "Updated via innerText " + index;
+});
+// Now update with textContent
+setTimeout(() => {
+Array.from(document.getElementById('textList').children).forEach((li, index) => {
+li.textContent = "Updated via textContent " + index;
+});
+}, 1000);
+</script>

@@ -1,0 +1,13 @@
+<ul id="bindList2"></ul>
+<script>
+let listData = ["Red", "Green", "Blue"];
+function renderList(data) {
+document.getElementById('bindList2').innerHTML = data.map(color => `<li>${color}</li>`).join("");
+}
+renderList(listData);
+// Simulate data change
+setTimeout(() => {
+listData.push("Yellow");
+renderList(listData);
+}, 2000);
+</script>

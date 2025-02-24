@@ -1,0 +1,13 @@
+<nav id="menuNav"></nav>
+<script>
+const menuItems = ["Home", "About", "Services", "Contact"];
+const frag = document.createDocumentFragment();
+const ul = document.createElement('ul');
+menuItems.forEach(item => {
+const li = document.createElement('li');
+li.textContent = item;
+ul.appendChild(li);
+});
+frag.appendChild(ul);
+document.getElementById('menuNav').appendChild(frag);
+</script>

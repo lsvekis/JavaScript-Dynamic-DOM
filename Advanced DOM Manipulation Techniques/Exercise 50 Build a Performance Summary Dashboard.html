@@ -1,0 +1,18 @@
+<div id="performanceDashboard" style="border:1px solid #333; padding:10px;"></div>
+<script>
+// Simulate a batch update operation
+const startTime = performance.now();
+const frag = document.createDocumentFragment();
+for (let i = 0; i < 100; i++) {
+const p = document.createElement('p');
+p.textContent = "Item " + i;
+frag.appendChild(p);
+}
+document.body.appendChild(frag);
+const endTime = performance.now();
+const dashboard = document.getElementById('performanceDashboard');
+dashboard.innerHTML = `
+<p>Batch updated 100 items</p>
+<p>Time taken: ${(endTime - startTime).toFixed(2)} ms</p>
+`;
+</script>

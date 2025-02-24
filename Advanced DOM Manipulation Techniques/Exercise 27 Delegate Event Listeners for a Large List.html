@@ -1,0 +1,15 @@
+<ul id="largeList"></ul>
+<script>
+const frag = document.createDocumentFragment();
+for (let i = 1; i <= 50; i++) {
+const li = document.createElement('li');
+li.textContent = "Item " + i;
+frag.appendChild(li);
+}
+document.getElementById('largeList').appendChild(frag);
+document.getElementById('largeList').addEventListener('click', (event) => {
+if (event.target.tagName === "LI") {
+console.log("Clicked:", event.target.innerText);
+}
+});
+</script>

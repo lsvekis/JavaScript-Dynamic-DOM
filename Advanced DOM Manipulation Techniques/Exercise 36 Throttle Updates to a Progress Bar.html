@@ -1,0 +1,15 @@
+<div id="progressBar" style="background: green; height: 20px; width: 0%;"></div>
+<script>
+let progress = 0;
+let throttleFlag = false;
+function updateProgress() {
+if (!throttleFlag) {
+progress += 1;
+document.getElementById('progressBar').style.width = progress + "%";
+throttleFlag = true;
+setTimeout(() => throttleFlag = false, 100);
+}
+if (progress < 100) requestAnimationFrame(updateProgress);
+}
+updateProgress();
+</script>

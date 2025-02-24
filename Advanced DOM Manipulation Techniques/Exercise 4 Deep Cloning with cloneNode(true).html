@@ -1,0 +1,6 @@
+<script>
+const deepClone = document.getElementById('originalShallow').cloneNode(true);
+deepClone.id = "deepClone";
+document.body.appendChild(deepClone);
+console.log("Deep clone:", deepClone.outerHTML);
+</script>

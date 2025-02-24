@@ -1,0 +1,12 @@
+<div id="sidebar"></div>
+<script>
+const sections = ["Dashboard", "Profile", "Settings", "Logout"];
+const sidebarFrag = document.createDocumentFragment();
+sections.forEach(section => {
+const div = document.createElement('div');
+div.textContent = section;
+div.className = "sidebar-item";
+sidebarFrag.appendChild(div);
+});
+document.getElementById('sidebar').appendChild(sidebarFrag);
+</script>

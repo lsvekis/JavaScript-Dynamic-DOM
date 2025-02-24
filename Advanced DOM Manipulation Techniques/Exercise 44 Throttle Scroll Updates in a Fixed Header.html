@@ -1,0 +1,12 @@
+<header id="fixedHeader" style="position: fixed; top:0; width:100%; padding:10px; background: lightblue;">Header</header>
+<script>
+let throttleHeader = false;
+window.addEventListener('scroll', () => {
+if (!throttleHeader) {
+const header = document.getElementById('fixedHeader');
+header.style.backgroundColor = window.scrollY > 50 ? "gray" : "lightblue";
+throttleHeader = true;
+setTimeout(() => throttleHeader = false, 200);
+}
+});
+</script>

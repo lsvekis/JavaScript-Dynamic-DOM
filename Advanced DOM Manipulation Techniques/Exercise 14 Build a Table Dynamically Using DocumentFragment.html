@@ -1,0 +1,19 @@
+<table id="dynamicTable" border="1"></table>
+<script>
+const dataArray = [
+["Name", "Age"],
+["Alice", "30"],
+["Bob", "25"]
+];
+const frag = document.createDocumentFragment();
+dataArray.forEach(rowData => {
+const tr = document.createElement('tr');
+rowData.forEach(cellData => {
+const td = document.createElement('td');
+td.textContent = cellData;
+tr.appendChild(td);
+});
+frag.appendChild(tr);
+});
+document.getElementById('dynamicTable').appendChild(frag);
+</script>

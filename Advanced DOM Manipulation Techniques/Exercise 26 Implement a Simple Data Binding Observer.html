@@ -1,0 +1,7 @@
+<input type="text" id="bindInput" placeholder="Type something">
+<div id="bindOutput">Initial value</div>
+<script>
+document.getElementById('bindInput').addEventListener('input', (event) => {
+document.getElementById('bindOutput').textContent = event.target.value;
+});
+</script>

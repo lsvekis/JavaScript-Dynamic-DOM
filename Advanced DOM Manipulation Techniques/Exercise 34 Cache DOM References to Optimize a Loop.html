@@ -1,0 +1,11 @@
+<ul id="cacheList"></ul>
+<script>
+const cacheList = document.getElementById('cacheList');
+const frag = document.createDocumentFragment();
+for (let i = 1; i <= 50; i++) {
+const li = document.createElement('li');
+li.textContent = "Item " + i;
+frag.appendChild(li);
+}
+cacheList.appendChild(frag);
+</script>

@@ -1,0 +1,12 @@
+<div id="fadeDiv" style="width:100px; height:100px; background: salmon; opacity: 1;">Fade me</div>
+<script>
+const fadeDiv = document.getElementById('fadeDiv');
+function fadeOut() {
+let opacity = parseFloat(fadeDiv.style.opacity);
+if (opacity > 0) {
+fadeDiv.style.opacity = opacity - 0.02;
+requestAnimationFrame(fadeOut);
+}
+}
+fadeOut();
+</script>

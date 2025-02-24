@@ -1,0 +1,9 @@
+<div id="templateOutput"></div>
+<script>
+function render(template, data) {
+return template.replace(/\{\{(.*?)\}\}/g, (match, key) => data[key.trim()] || "");
+}
+const template = "<h2>{{ title }}</h2><p>{{ description }}</p>";
+const data = { title: "My Card", description: "This is a dynamically rendered card." };
+document.getElementById('templateOutput').innerHTML = render(template, data);
+</script>

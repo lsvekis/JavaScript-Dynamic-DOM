@@ -1,0 +1,23 @@
+<ul id="diffList">
+<li>Apple</li>
+<li>Banana</li>
+</ul>
+<script>
+function updateList(oldData, newData) {
+const ul = document.getElementById('diffList');
+// Simple diff: if lengths differ, re-render entirely.
+if (oldData.length !== newData.length) {
+ul.innerHTML = newData.map(item => `<li>${item}</li>`).join("");
+} else {
+// Otherwise, update items that are different.
+Array.from(ul.children).forEach((li, index) => {
+if (li.textContent !== newData[index]) {
+li.textContent = newData[index];
+}
+});
+}
+}
+const oldData = ["Apple", "Banana"];
+const newData = ["Apple", "Cherry"];
+updateList(oldData, newData);
+</script>

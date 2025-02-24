@@ -1,0 +1,9 @@
+<div id="mutationTarget">Initial</div>
+<script>
+const observer = new MutationObserver(mutations => {
+mutations.forEach(m => console.log("Mutation:", m));
+});
+const target = document.getElementById('mutationTarget');
+observer.observe(target, { childList: true, characterData: true, subtree: true });
+setTimeout(() => { target.textContent = "Updated via MutationObserver"; }, 1500);
+</script>

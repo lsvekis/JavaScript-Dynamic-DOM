@@ -1,0 +1,18 @@
+<ul id="directList"></ul>
+<ul id="fragmentList"></ul>
+<script>
+// Direct insertion
+for (let i = 1; i <= 100; i++) {
+const li = document.createElement('li');
+li.textContent = "Direct Item " + i;
+document.getElementById('directList').appendChild(li);
+}
+// Using DocumentFragment
+const frag = document.createDocumentFragment();
+for (let i = 1; i <= 100; i++) {
+const li = document.createElement('li');
+li.textContent = "Fragment Item " + i;
+frag.appendChild(li);
+}
+document.getElementById('fragmentList').appendChild(frag);
+</script>

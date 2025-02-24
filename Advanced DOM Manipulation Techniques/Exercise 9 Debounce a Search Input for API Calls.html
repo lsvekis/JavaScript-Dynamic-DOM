@@ -1,0 +1,10 @@
+<input type="text" id="searchInput" placeholder="Search...">
+<script>
+let searchTimer;
+document.getElementById('searchInput').addEventListener('input', (event) => {
+clearTimeout(searchTimer);
+searchTimer = setTimeout(() => {
+console.log("Searching for:", event.target.value);
+}, 500);
+});
+</script>

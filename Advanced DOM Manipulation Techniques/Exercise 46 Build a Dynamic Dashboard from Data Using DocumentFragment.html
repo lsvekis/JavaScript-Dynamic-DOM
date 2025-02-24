@@ -1,0 +1,18 @@
+<div id="dashboard"></div>
+<script>
+const dashboardData = [
+{ title: "Users", value: 120 },
+{ title: "Orders", value: 80 },
+{ title: "Revenue", value: "$1500" }
+];
+const dashFrag = document.createDocumentFragment();
+dashboardData.forEach(item => {
+const card = document.createElement('div');
+card.style.border = "1px solid #ccc";
+card.style.padding = "10px";
+card.style.margin = "5px";
+card.innerHTML = `<h3>${item.title}</h3><p>${item.value}</p>`;
+dashFrag.appendChild(card);
+});
+document.getElementById('dashboard').appendChild(dashFrag);
+</script>

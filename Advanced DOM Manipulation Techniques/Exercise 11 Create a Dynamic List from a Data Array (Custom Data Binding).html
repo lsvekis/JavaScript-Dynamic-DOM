@@ -1,0 +1,6 @@
+<ul id="dataList"></ul>
+<script>
+const data = ["Alpha", "Beta", "Gamma"];
+const ul = document.getElementById('dataList');
+ul.innerHTML = data.map(item => `<li>${item}</li>`).join("");
+</script>

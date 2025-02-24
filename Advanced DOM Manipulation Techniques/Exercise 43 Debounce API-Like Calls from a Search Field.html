@@ -1,0 +1,10 @@
+<input type="text" id="apiSearch" placeholder="Search...">
+<script>
+let apiDebounce;
+document.getElementById('apiSearch').addEventListener('input', (event) => {
+clearTimeout(apiDebounce);
+apiDebounce = setTimeout(() => {
+console.log("API call for:", event.target.value);
+}, 500);
+});
+</script>

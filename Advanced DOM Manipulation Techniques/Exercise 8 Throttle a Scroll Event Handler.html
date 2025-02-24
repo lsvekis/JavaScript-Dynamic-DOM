@@ -1,0 +1,12 @@
+<script>
+let throttleTimer = false;
+window.addEventListener('scroll', () => {
+if (!throttleTimer) {
+console.log("Scroll position:", window.scrollY);
+throttleTimer = true;
+setTimeout(() => {
+throttleTimer = false;
+}, 200);
+}
+});
+</script>

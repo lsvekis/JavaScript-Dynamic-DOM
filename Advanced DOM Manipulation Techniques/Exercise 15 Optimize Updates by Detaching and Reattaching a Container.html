@@ -1,0 +1,8 @@
+<div id="detachContainer">Old Content</div>
+<script>
+const container = document.getElementById('detachContainer');
+const parent = container.parentNode;
+parent.removeChild(container);
+container.innerHTML = "<p>Updated while detached</p>";
+parent.appendChild(container);
+</script>

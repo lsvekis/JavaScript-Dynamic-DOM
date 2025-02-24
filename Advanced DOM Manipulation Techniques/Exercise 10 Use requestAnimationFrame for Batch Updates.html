@@ -1,0 +1,12 @@
+<div id="animDiv" style="background: teal; height: 20px; width: 0%;"></div>
+<script>
+let width = 0;
+function animate() {
+width += 1;
+document.getElementById('animDiv').style.width = width + "%";
+if (width < 100) {
+requestAnimationFrame(animate);
+}
+}
+animate();
+</script>

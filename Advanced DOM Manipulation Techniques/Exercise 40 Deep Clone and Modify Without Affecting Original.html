@@ -1,0 +1,9 @@
+<div id="originalDiv">Original Text</div>
+<script>
+const originalDiv = document.getElementById('originalDiv');
+const cloneDiv = originalDiv.cloneNode(true);
+cloneDiv.textContent = "Modified Clone Text";
+document.body.appendChild(cloneDiv);
+console.log("Original:", originalDiv.textContent);
+console.log("Clone:", cloneDiv.textContent);
+</script>

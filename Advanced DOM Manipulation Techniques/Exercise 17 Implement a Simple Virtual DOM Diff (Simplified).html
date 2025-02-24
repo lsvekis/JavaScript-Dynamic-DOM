@@ -1,0 +1,13 @@
+<div id="vdom">Old content</div>
+<script>
+function updateIfChanged(newContent) {
+const vdomDiv = document.getElementById('vdom');
+if (vdomDiv.textContent !== newContent) {
+vdomDiv.textContent = newContent;
+console.log("Content updated");
+} else {
+console.log("No changes detected");
+}
+}
+updateIfChanged("New content");
+</script>

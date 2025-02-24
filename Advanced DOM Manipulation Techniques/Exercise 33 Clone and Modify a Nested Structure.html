@@ -1,0 +1,10 @@
+<div id="nestedOriginal">
+<h3>Header</h3>
+<p>Paragraph</p>
+</div>
+<script>
+const originalNested = document.getElementById('nestedOriginal');
+const clonedNested = originalNested.cloneNode(true);
+clonedNested.querySelector('p').textContent = "Modified Paragraph in Clone";
+originalNested.parentNode.appendChild(clonedNested);
+</script>

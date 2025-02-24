@@ -1,0 +1,11 @@
+<div id="draggable" draggable="true" style="width:100px; height:100px; background:lightcoral;">Drag me</div>
+<script>
+let throttleTimer = false;
+document.getElementById('draggable').addEventListener('drag', (event) => {
+if (!throttleTimer) {
+console.log("Drag position:", event.clientX, event.clientY);
+throttleTimer = true;
+setTimeout(() => { throttleTimer = false; }, 100);
+}
+});
+</script>

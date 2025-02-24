@@ -1,0 +1,10 @@
+<div id="batchContainer"></div>
+<script>
+const batchFragment = document.createDocumentFragment();
+for (let i = 1; i <= 50; i++) {
+const div = document.createElement('div');
+div.textContent = "Batch Item " + i;
+batchFragment.appendChild(div);
+}
+document.getElementById('batchContainer').appendChild(batchFragment);
+</script>

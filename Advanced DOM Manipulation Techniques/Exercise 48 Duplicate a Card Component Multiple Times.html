@@ -1,0 +1,16 @@
+<div id="cardTemplate" style="border: 1px solid #000; padding: 10px; margin: 5px;">
+<h4>Card Title</h4>
+<p>Card content here.</p>
+</div>
+<div id="cardsContainer"></div>
+<script>
+const template = document.getElementById('cardTemplate');
+const container = document.getElementById('cardsContainer');
+for (let i = 1; i <= 3; i++) {
+const clone = template.cloneNode(true);
+clone.querySelector('h4').textContent = "Card " + i;
+container.appendChild(clone);
+}
+// Optionally, hide the original template.
+template.style.display = "none";
+</script>

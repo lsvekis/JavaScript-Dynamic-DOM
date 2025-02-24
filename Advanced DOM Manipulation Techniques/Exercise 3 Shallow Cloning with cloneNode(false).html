@@ -1,0 +1,9 @@
+<div id="originalShallow">
+<p>Child Paragraph</p>
+</div>
+<script>
+const shallowClone = document.getElementById('originalShallow').cloneNode(false);
+shallowClone.id = "shallowClone";
+document.body.appendChild(shallowClone);
+console.log("Shallow clone:", shallowClone.outerHTML);
+</script>

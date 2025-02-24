@@ -1,0 +1,13 @@
+<div id="detachBatch">
+<p>Old 1</p>
+<p>Old 2</p>
+</div>
+<script>
+const container = document.getElementById('detachBatch');
+const parent = container.parentNode;
+parent.removeChild(container);
+Array.from(container.children).forEach((child, index) => {
+child.textContent = "New " + (index + 1);
+});
+parent.appendChild(container);
+</script>

@@ -1,0 +1,15 @@
+<ul id="rebuildList">
+<li>Old Item</li>
+<li>Old Item</li>
+</ul>
+<script>
+const rebuildList = document.getElementById('rebuildList');
+rebuildList.innerHTML = "";
+const newFrag = document.createDocumentFragment();
+for (let i = 1; i <= 10; i++) {
+const li = document.createElement('li');
+li.textContent = "New Item " + i;
+newFrag.appendChild(li);
+}
+rebuildList.appendChild(newFrag);
+</script>

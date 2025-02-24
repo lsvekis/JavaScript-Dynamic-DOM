@@ -1,0 +1,9 @@
+<ul id="batchUpdateList">
+<li>Old 1</li>
+<li>Old 2</li>
+<li>Old 3</li>
+</ul>
+<script>
+const items = ["New 1", "New 2", "New 3"];
+document.getElementById('batchUpdateList').innerHTML = items.map(item => `<li>${item}</li>`).join("");
+</script>

@@ -1,0 +1,10 @@
+<div id="complexElement">
+<h2>Title</h2>
+<p>Some text.</p>
+</div>
+<script>
+const original = document.getElementById('complexElement');
+const clone = original.cloneNode(true);
+clone.id = "complexClone";
+original.parentNode.insertBefore(clone, original.nextSibling);
+</script>

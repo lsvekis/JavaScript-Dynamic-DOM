@@ -1,0 +1,10 @@
+<ul id="navMenu">
+<li>Home</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+<script>
+const navClone = document.getElementById('navMenu').cloneNode(true);
+navClone.id = "navMenuClone";
+document.getElementById('navMenu').parentNode.appendChild(navClone);
+</script>

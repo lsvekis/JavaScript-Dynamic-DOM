@@ -1,0 +1,10 @@
+<div id="formSection">
+<input type="text" placeholder="Field 1">
+<input type="text" placeholder="Field 2">
+</div>
+<script>
+const formSection = document.getElementById('formSection');
+const cloneSection = formSection.cloneNode(true);
+cloneSection.id = "formSectionClone";
+formSection.parentNode.appendChild(cloneSection);
+</script>

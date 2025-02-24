@@ -1,0 +1,13 @@
+<span id="dataBind"></span>
+<script>
+let data = { value: "Initial" };
+function bindData() {
+document.getElementById('dataBind').textContent = data.value;
+}
+bindData();
+// Simulate data change after 2 seconds
+setTimeout(() => {
+data.value = "Updated";
+bindData();
+}, 2000);
+</script>

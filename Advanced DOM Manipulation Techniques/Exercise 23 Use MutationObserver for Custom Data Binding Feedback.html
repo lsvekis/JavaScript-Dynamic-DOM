@@ -1,0 +1,13 @@
+<div id="observeBind">Bound Data</div>
+<script>
+const observer = new MutationObserver(mutations => {
+mutations.forEach(mutation => {
+console.log("Bound element updated:", mutation.target.textContent);
+});
+});
+observer.observe(document.getElementById('observeBind'), { childList: true, characterData: true, subtree: true });
+// Simulate update
+setTimeout(() => {
+document.getElementById('observeBind').textContent = "New Bound Data";
+}, 1500);
+</script>
