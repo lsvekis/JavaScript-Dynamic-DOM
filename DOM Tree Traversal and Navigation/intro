@@ -1,0 +1,9 @@
+In this section you will learn how to move around the DOM using built‑in properties and methods. You’ll discover how to:
+Navigate Relationships: Access parent, child, and sibling elements using properties like parentNode, firstChild/firstElementChild, lastChild/lastElementChild, nextSibling/nextElementSibling, and previousSibling/previousElementSibling.
+Traverse Techniques: Loop through child nodes, filter by node type (to skip text nodes, for example), and recursively navigate nested structures.
+Practical Use Cases: Update or style related elements by traversing from one node to another.
+Learning Objectives:
+Understand the hierarchical structure of the DOM.
+Efficiently navigate between nodes.
+Apply traversal methods in practical scenarios.
+Below are 50 coding exercises with instructions, learning objectives, and starter code to help you master these techniques.
