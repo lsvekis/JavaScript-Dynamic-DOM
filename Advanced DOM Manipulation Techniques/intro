@@ -1,0 +1,6 @@
+In this section you will learn methods and best practices for efficiently updating the DOM—especially when dealing with large or complex changes. You’ll explore techniques to minimize costly reflows/repaints by using tools such as DocumentFragment, learn how to clone nodes (both shallow and deep), and apply performance strategies like debouncing, throttling, and batch updates. In addition, you’ll see simple approaches to custom data binding to keep your UI in sync with data changes.
+Learning Objectives:
+Optimize dynamic DOM updates for performance.
+Understand advanced techniques to manage large or complex DOM changes.
+Apply best practices to reduce performance bottlenecks.
+Below are 50 coding exercises that will give you hands-on experience with these advanced techniques. Each exercise includes a brief learning objective, clear instructions, and starter code.
