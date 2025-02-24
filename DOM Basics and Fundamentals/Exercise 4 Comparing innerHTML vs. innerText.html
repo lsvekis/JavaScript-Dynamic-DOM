@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exercise 4</title>
+</head>
+<body>
+<div id="compare"></div>
+<div id="compareText"></div>
+<script>
+const htmlString = '<em>This should be italic</em>';
+
+// Using innerHTML: renders the HTML tags
+const compareDiv = document.getElementById('compare');
+compareDiv.innerHTML = htmlString;
+
+// Using innerText: displays the HTML string as plain text
+const compareTextDiv = document.getElementById('compareText');
+compareTextDiv.innerText = htmlString;
+</script>
