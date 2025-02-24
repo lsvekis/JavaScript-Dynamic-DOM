@@ -1,0 +1,15 @@
+In this section you’ll integrate many of the techniques you’ve learned to build full-fledged, interactive UI components and even combine several components into complete applications. You’ll build reusable components such as modals, tabs, accordions, dynamic lists, image galleries, and even drag‐and‐drop interfaces. You’ll also learn how to create and dispatch custom events for component communication and bring everything together to solve real‐world user-interaction challenges using only vanilla JavaScript.
+Topics Covered:
+Component Creation:
+Build reusable interactive components (e.g., modals, tabs, accordions) by combining DOM manipulation, event handling, and styling.
+Interactive Widgets:
+Create dynamic lists, image galleries, drag-and-drop interfaces, and other widgets that respond to user input.
+Custom Events:
+Define and dispatch your own events to enable communication between components.
+Project Integration:
+Combine multiple DOM concepts and components to build complete, interactive, single‑page applications.
+Learning Objectives:
+Integrate multiple DOM manipulation skills to build complete interactive applications.
+Apply best practices in structuring and organizing code for reusability and maintainability.
+Solve complex user-interaction challenges using only vanilla JavaScript.
+Below are 50 coding exercises that will guide you step-by-step through building interactive projects and complex applications. Each exercise includes a brief learning objective, clear instructions, and starter code.
