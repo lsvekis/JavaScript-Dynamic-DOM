@@ -1,0 +1,10 @@
+<div id="headerContainer2">
+<h2 id="oldHeader">Old Header</h2>
+</div>
+<script>
+const container = document.getElementById('headerContainer2');
+const newHeader = document.createElement('h2');
+newHeader.textContent = "New Header";
+const oldHeader = document.getElementById('oldHeader');
+container.replaceChild(newHeader, oldHeader);
+</script>

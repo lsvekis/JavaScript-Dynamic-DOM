@@ -1,0 +1,19 @@
+<nav id="navMenu">
+<ul></ul>
+</nav>
+<script>
+const links = [
+{ text: "Home", url: "/" },
+{ text: "About", url: "/about" },
+{ text: "Contact", url: "/contact" }
+];
+const ul = document.querySelector('#navMenu ul');
+links.forEach(link => {
+const li = document.createElement('li');
+const a = document.createElement('a');
+a.textContent = link.text;
+a.href = link.url;
+li.appendChild(a);
+ul.appendChild(li);
+});
+</script>

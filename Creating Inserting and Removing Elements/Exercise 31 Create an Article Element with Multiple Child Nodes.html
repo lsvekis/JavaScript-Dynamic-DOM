@@ -1,0 +1,15 @@
+<div id="articleContainer"></div>
+<script>
+const article = document.createElement('article');
+const title = document.createElement('h2');
+title.textContent = "Article Title";
+const image = document.createElement('img');
+image.src = "article.jpg";
+image.alt = "Article Image";
+const para = document.createElement('p');
+para.textContent = "This is the article content.";
+article.appendChild(title);
+article.appendChild(image);
+article.appendChild(para);
+document.getElementById('articleContainer').appendChild(article);
+</script>

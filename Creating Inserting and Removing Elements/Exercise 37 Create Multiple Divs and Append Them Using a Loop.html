@@ -1,0 +1,9 @@
+<div id="multiDiv"></div>
+<script>
+const multiDiv = document.getElementById('multiDiv');
+for (let i = 1; i <= 4; i++) {
+const div = document.createElement('div');
+div.textContent = `Div number ${i}`;
+multiDiv.appendChild(div);
+}
+</script>

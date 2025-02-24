@@ -1,0 +1,15 @@
+<div id="separatorContainer"></div>
+<script>
+const words = ["One", "Two", "Three"];
+const container = document.getElementById('separatorContainer');
+words.forEach((word, index) => {
+const span = document.createElement('span');
+span.textContent = word;
+container.appendChild(span);
+if (index < words.length - 1) {
+const separator = document.createElement('span');
+separator.textContent = " | ";
+container.appendChild(separator);
+}
+});
+</script>

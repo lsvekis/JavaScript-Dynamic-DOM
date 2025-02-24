@@ -1,0 +1,10 @@
+<div id="sectionWrapper">
+<section>Section One</section>
+<section>Section Two</section>
+</div>
+<script>
+const wrapper = document.getElementById('sectionWrapper');
+const hr = document.createElement('hr');
+// Insert hr before the second section
+wrapper.insertBefore(hr, wrapper.children[1]);
+</script>

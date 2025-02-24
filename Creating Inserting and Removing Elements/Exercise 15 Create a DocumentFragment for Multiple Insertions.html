@@ -1,0 +1,14 @@
+<div id="fragmentContainer"></div>
+<script>
+const colors = ["red", "green", "blue"];
+const fragment = document.createDocumentFragment();
+colors.forEach(color => {
+const div = document.createElement('div');
+div.textContent = `Color: ${color}`;
+div.style.backgroundColor = color;
+div.style.color = "white";
+div.style.padding = "5px";
+fragment.appendChild(div);
+});
+document.getElementById('fragmentContainer').appendChild(fragment);
+</script>

@@ -1,0 +1,15 @@
+<div id="breadcrumb"></div>
+<script>
+const crumbs = ["Home", "Products", "Electronics", "Cameras"];
+const breadcrumbContainer = document.getElementById('breadcrumb');
+crumbs.forEach((crumb, index) => {
+const span = document.createElement('span');
+span.textContent = crumb;
+breadcrumbContainer.appendChild(span);
+if (index < crumbs.length - 1) {
+const separator = document.createElement('span');
+separator.textContent = " > ";
+breadcrumbContainer.appendChild(separator);
+}
+});
+</script>

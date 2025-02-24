@@ -1,0 +1,11 @@
+<div id="complexContainer"></div>
+<script>
+const newDiv = document.createElement('div');
+const h4 = document.createElement('h4');
+h4.textContent = "Nested Header";
+const p = document.createElement('p');
+p.textContent = "Nested paragraph content.";
+newDiv.appendChild(h4);
+newDiv.appendChild(p);
+document.getElementById('complexContainer').appendChild(newDiv);
+</script>

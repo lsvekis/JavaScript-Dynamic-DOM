@@ -1,0 +1,10 @@
+<ol id="orderedList"></ol>
+<script>
+const items = ["Alpha", "Beta", "Gamma"];
+const ol = document.getElementById('orderedList');
+items.forEach(item => {
+const li = document.createElement('li');
+li.textContent = item;
+ol.appendChild(li);
+});
+</script>

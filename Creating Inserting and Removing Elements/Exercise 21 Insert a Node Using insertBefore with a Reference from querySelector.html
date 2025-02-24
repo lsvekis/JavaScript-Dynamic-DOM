@@ -1,0 +1,12 @@
+<div id="refContainer">
+<p>First Paragraph</p>
+<p>Second Paragraph</p>
+<p>Third Paragraph</p>
+</div>
+<script>
+const container = document.getElementById('refContainer');
+const refNode = container.querySelectorAll('p')[1];
+const newPara = document.createElement('p');
+newPara.textContent = "Inserted before second paragraph";
+container.insertBefore(newPara, refNode);
+</script>

@@ -1,0 +1,10 @@
+<div id="swapContainer">
+<span id="oldSpan">Old Span</span>
+</div>
+<script>
+const container = document.getElementById('swapContainer');
+const newSpan = document.createElement('span');
+newSpan.textContent = "New Span";
+const oldSpan = document.getElementById('oldSpan');
+container.replaceChild(newSpan, oldSpan);
+</script>

@@ -1,0 +1,16 @@
+<div id="replaceAll">
+<p>Old Content 1</p>
+<p>Old Content 2</p>
+</div>
+<script>
+const container = document.getElementById('replaceAll');
+// Remove all children
+container.innerHTML = "";
+const fragment = document.createDocumentFragment();
+for (let i = 1; i <= 3; i++) {
+const p = document.createElement('p');
+p.textContent = `New Paragraph ${i}`;
+fragment.appendChild(p);
+}
+container.appendChild(fragment);
+</script>

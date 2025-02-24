@@ -1,0 +1,9 @@
+<div id="prependContainer"></div>
+<script>
+const container = document.getElementById('prependContainer');
+for (let i = 1; i <= 3; i++) {
+const p = document.createElement('p');
+p.textContent = `Prepended Paragraph ${i}`;
+container.prepend(p);
+}
+</script>

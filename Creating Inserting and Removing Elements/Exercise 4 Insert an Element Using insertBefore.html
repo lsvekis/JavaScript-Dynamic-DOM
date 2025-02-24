@@ -1,0 +1,11 @@
+<div id="paraContainer">
+<p id="first">First Paragraph</p>
+<p id="second">Second Paragraph</p>
+</div>
+<script>
+const container = document.getElementById('paraContainer');
+const newPara = document.createElement('p');
+newPara.textContent = "Inserted Paragraph";
+const secondPara = document.getElementById('second');
+container.insertBefore(newPara, secondPara);
+</script>

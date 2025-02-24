@@ -1,0 +1,16 @@
+<script>
+const modal = document.createElement('div');
+modal.className = "modal";
+modal.innerHTML = `
+<div class="modal-content">
+<h2>Modal Header</h2>
+<p>This is the modal content.</p>
+<button id="closeModal">Close</button>
+</div>
+`;
+document.body.appendChild(modal);
+// Optional: Add event listener to close modal
+document.getElementById('closeModal').addEventListener('click', () => {
+modal.remove();
+});
+</script>

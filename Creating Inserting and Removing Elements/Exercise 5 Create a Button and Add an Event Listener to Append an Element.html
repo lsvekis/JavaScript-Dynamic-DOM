@@ -1,0 +1,9 @@
+<div id="content"></div>
+<button id="addBtn">Add Paragraph</button>
+<script>
+document.getElementById('addBtn').addEventListener('click', () => {
+const p = document.createElement('p');
+p.textContent = "New Paragraph";
+document.getElementById('content').appendChild(p);
+});
+</script>

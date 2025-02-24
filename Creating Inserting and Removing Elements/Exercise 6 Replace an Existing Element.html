@@ -1,0 +1,10 @@
+<div id="replaceContainer">
+<p id="old">Old Paragraph</p>
+</div>
+<script>
+const container = document.getElementById('replaceContainer');
+const newPara = document.createElement('p');
+newPara.textContent = "New Paragraph";
+const oldPara = document.getElementById('old');
+container.replaceChild(newPara, oldPara);
+</script>

@@ -1,0 +1,16 @@
+<ul id="removableList"></ul>
+<script>
+const items = ["Item A", "Item B", "Item C"];
+const list = document.getElementById('removableList');
+items.forEach(itemText => {
+const li = document.createElement('li');
+li.textContent = itemText;
+const btn = document.createElement('button');
+btn.textContent = "Remove";
+btn.addEventListener('click', () => {
+li.remove();
+});
+li.appendChild(btn);
+list.appendChild(li);
+});
+</script>

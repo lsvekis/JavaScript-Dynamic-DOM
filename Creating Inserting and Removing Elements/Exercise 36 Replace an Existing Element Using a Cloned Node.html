@@ -1,0 +1,11 @@
+<div id="cloneReplace">
+<p id="original">Original Paragraph</p>
+<p id="target">Target Paragraph</p>
+</div>
+<script>
+const original = document.getElementById('original');
+const clone = original.cloneNode(true);
+const container = document.getElementById('cloneReplace');
+const target = document.getElementById('target');
+container.replaceChild(clone, target);
+</script>

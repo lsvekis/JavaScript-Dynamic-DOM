@@ -1,0 +1,11 @@
+<div id="removeExample">
+<p id="textToRemove">Remove this text</p>
+<button id="removeBtn">Remove Text</button>
+</div>
+<script>
+document.getElementById('removeBtn').addEventListener('click', () => {
+const parent = document.getElementById('removeExample');
+const textEl = document.getElementById('textToRemove');
+parent.removeChild(textEl);
+});
+</script>

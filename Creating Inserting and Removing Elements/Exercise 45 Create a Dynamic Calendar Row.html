@@ -1,0 +1,9 @@
+<div id="calendarRow"></div>
+<script>
+const calendarRow = document.getElementById('calendarRow');
+for (let day = 1; day <= 7; day++) {
+const daySpan = document.createElement('span');
+daySpan.textContent = `Day ${day} `;
+calendarRow.appendChild(daySpan);
+}
+</script>

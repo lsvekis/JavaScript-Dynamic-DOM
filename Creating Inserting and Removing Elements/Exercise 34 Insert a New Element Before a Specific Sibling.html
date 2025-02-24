@@ -1,0 +1,12 @@
+<div id="spanGroup">
+<span>Alpha</span>
+<span>Target</span>
+<span>Beta</span>
+</div>
+<script>
+const group = document.getElementById('spanGroup');
+const targetSpan = Array.from(group.children).find(span => span.textContent === "Target");
+const newSpan = document.createElement('span');
+newSpan.textContent = "Inserted Before Target";
+group.insertBefore(newSpan, targetSpan);
+</script>

@@ -1,0 +1,6 @@
+<div id="cloneOriginal">Original Div</div>
+<script>
+const originalDiv = document.getElementById('cloneOriginal');
+const clone = originalDiv.cloneNode(true);
+originalDiv.parentNode.insertBefore(clone, originalDiv.nextSibling);
+</script>

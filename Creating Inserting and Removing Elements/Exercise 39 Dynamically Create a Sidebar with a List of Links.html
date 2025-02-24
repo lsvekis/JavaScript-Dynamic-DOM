@@ -1,0 +1,20 @@
+<aside id="sidebar"></aside>
+<script>
+const links = [
+{ text: "Dashboard", url: "/dashboard" },
+{ text: "Settings", url: "/settings" },
+{ text: "Profile", url: "/profile" }
+];
+const nav = document.createElement('nav');
+const ul = document.createElement('ul');
+links.forEach(link => {
+const li = document.createElement('li');
+const a = document.createElement('a');
+a.textContent = link.text;
+a.href = link.url;
+li.appendChild(a);
+ul.appendChild(li);
+});
+nav.appendChild(ul);
+document.getElementById('sidebar').appendChild(nav);
+</script>

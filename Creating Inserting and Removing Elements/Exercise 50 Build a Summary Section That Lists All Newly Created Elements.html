@@ -1,0 +1,23 @@
+<div id="dynamicContent"></div>
+<div id="summarySection"></div>
+<script>
+// Create dynamic content
+const dynamicContent = document.getElementById('dynamicContent');
+for (let i = 1; i <= 3; i++) {
+const heading = document.createElement('h2');
+heading.textContent = `Heading ${i}`;
+const para = document.createElement('p');
+para.textContent = `This is paragraph for heading ${i}.`;
+dynamicContent.appendChild(heading);
+dynamicContent.appendChild(para);
+}
+
+// Build summary
+const summarySection = document.getElementById('summarySection');
+const totalHeadings = dynamicContent.getElementsByTagName('h2').length;
+const totalParagraphs = dynamicContent.getElementsByTagName('p').length;
+summarySection.innerHTML = `
+<p>Total Headings: ${totalHeadings}</p>
+<p>Total Paragraphs: ${totalParagraphs}</p>
+`;
+</script>

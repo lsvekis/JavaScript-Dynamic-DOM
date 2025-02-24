@@ -1,0 +1,16 @@
+<div id="socialBar"></div>
+<script>
+const socials = [
+{ name: "Facebook", url: "https://facebook.com" },
+{ name: "Twitter", url: "https://twitter.com" },
+{ name: "Instagram", url: "https://instagram.com" }
+];
+const socialBar = document.getElementById('socialBar');
+socials.forEach(social => {
+const a = document.createElement('a');
+a.href = social.url;
+a.textContent = social.name; // Replace with icon if available
+a.style.marginRight = "10px";
+socialBar.appendChild(a);
+});
+</script>

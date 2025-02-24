@@ -1,0 +1,12 @@
+<ul id="numberList">
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+</ul>
+<script>
+const ul = document.getElementById('numberList');
+const newLi = document.createElement('li');
+newLi.textContent = "Inserted Two";
+// Insert before the current second item (index 1)
+ul.insertBefore(newLi, ul.children[1]);
+</script>

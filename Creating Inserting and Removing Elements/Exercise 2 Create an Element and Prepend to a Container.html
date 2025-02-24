@@ -1,0 +1,9 @@
+<div id="container">
+<p>Existing Paragraph</p>
+</div>
+<script>
+const container = document.getElementById('container');
+const h1 = document.createElement('h1');
+h1.textContent = "Prepended Header";
+container.prepend(h1);
+</script>

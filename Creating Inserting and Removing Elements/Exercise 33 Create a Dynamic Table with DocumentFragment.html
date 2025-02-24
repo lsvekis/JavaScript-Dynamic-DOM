@@ -1,0 +1,14 @@
+<table id="dynamicTable" border="1"></table>
+<script>
+const fragment = document.createDocumentFragment();
+for (let i = 1; i <= 3; i++) {
+const tr = document.createElement('tr');
+for (let j = 1; j <= 2; j++) {
+const td = document.createElement('td');
+td.textContent = `Row ${i}, Cell ${j}`;
+tr.appendChild(td);
+}
+fragment.appendChild(tr);
+}
+document.getElementById('dynamicTable').appendChild(fragment);
+</script>

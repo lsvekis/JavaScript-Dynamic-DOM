@@ -1,0 +1,18 @@
+<div id="faqSection"></div>
+<script>
+const faqs = [
+{ question: "What is DOM?", answer: "Document Object Model." },
+{ question: "What is JavaScript?", answer: "A programming language for the web." }
+];
+const faqContainer = document.getElementById('faqSection');
+faqs.forEach(faq => {
+const faqDiv = document.createElement('div');
+const question = document.createElement('h3');
+question.textContent = faq.question;
+const answer = document.createElement('p');
+answer.textContent = faq.answer;
+faqDiv.appendChild(question);
+faqDiv.appendChild(answer);
+faqContainer.appendChild(faqDiv);
+});
+</script>

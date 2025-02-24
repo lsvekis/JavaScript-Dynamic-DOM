@@ -1,0 +1,11 @@
+<ul id="middleList">
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ul>
+<script>
+const ul = document.getElementById('middleList');
+const newLi = document.createElement('li');
+newLi.textContent = "Inserted Item";
+ul.insertBefore(newLi, ul.children[2]);
+</script>

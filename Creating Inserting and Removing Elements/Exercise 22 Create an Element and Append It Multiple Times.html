@@ -1,0 +1,10 @@
+<div id="cloneContainer"></div>
+<script>
+const original = document.createElement('div');
+original.textContent = "I am cloned!";
+const container = document.getElementById('cloneContainer');
+container.appendChild(original);
+// Clone and append two times (deep clone)
+container.appendChild(original.cloneNode(true));
+container.appendChild(original.cloneNode(true));
+</script>
