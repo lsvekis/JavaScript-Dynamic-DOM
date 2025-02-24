@@ -1,0 +1,17 @@
+Modern web applications often require you to build and modify the document structure on the fly. In this section, you will learn how to:
+Create Elements:
+Use document.createElement to create new nodes, set their properties, and prepare them for insertion into the DOM.
+Insertion Methods:
+Add new elements into the DOM tree using methods such as:
+appendChild: Adds a node as the last child of a parent.
+insertBefore: Inserts a node before a reference node.
+prepend: Adds a node as the first child (supported in modern browsers).
+Removing & Replacing Elements:
+Remove nodes with removeChild and replace them with replaceChild to update your document dynamically.
+Using DocumentFragment:
+When you need to insert many elements, using a DocumentFragment minimizes reflows and repaints for better performance.
+Learning Objectives:
+Create new DOM elements dynamically.
+Learn various methods to insert, remove, and replace nodes.
+Optimize DOM updates with DocumentFragments.
+Now, let’s work through 50 coding exercises that build your mastery of these techniques.
