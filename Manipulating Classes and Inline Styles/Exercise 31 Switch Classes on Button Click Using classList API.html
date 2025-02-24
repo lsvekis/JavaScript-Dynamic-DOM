@@ -1,0 +1,15 @@
+<div id="switchDiv" class="red">Switch my color</div>
+<button id="switchBtn">Switch Color</button>
+<script>
+const switchDiv = document.getElementById('switchDiv');
+document.getElementById('switchBtn').addEventListener('click', () => {
+if (switchDiv.classList.contains("red")) {
+switchDiv.classList.remove("red");
+switchDiv.classList.add("green");
+} else {
+switchDiv.classList.remove("green");
+switchDiv.classList.add("red");
+}
+console.log("Classes:", switchDiv.className);
+});
+</script>

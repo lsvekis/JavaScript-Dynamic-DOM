@@ -1,0 +1,13 @@
+<div class="styleItem">Item A</div>
+<div class="styleItem">Item B</div>
+<script>
+function applyStyles(selector, styles) {
+const elements = document.querySelectorAll(selector);
+elements.forEach(el => {
+for (let prop in styles) {
+el.style[prop] = styles[prop];
+}
+});
+}
+applyStyles('.styleItem', { color: 'purple', fontWeight: 'bold' });
+</script>

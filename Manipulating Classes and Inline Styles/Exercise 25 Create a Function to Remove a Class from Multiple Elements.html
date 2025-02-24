@@ -1,0 +1,9 @@
+<div class="card active">Card 1</div>
+<div class="card active">Card 2</div>
+<script>
+function removeClassFromAll(selector, className) {
+const elements = document.querySelectorAll(selector);
+elements.forEach(el => el.classList.remove(className));
+}
+removeClassFromAll('.card', 'active');
+</script>

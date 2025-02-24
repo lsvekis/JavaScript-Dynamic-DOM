@@ -1,0 +1,13 @@
+<input id="statusInput" placeholder="Type 'error' to trigger">
+<div id="statusDiv">Status Display</div>
+<script>
+const statusInput = document.getElementById('statusInput');
+const statusDiv = document.getElementById('statusDiv');
+statusInput.addEventListener('input', () => {
+if (statusInput.value.toLowerCase() === "error") {
+statusDiv.classList.add("error");
+} else {
+statusDiv.classList.remove("error");
+}
+});
+</script>

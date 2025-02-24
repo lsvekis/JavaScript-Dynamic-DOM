@@ -1,0 +1,9 @@
+<div id="toggleVisibility">Toggle my visibility</div>
+<button id="visibilityBtn">Toggle Visibility</button>
+<script>
+const toggleVisibility = document.getElementById('toggleVisibility');
+document.getElementById('visibilityBtn').addEventListener('click', () => {
+toggleVisibility.style.display =
+(toggleVisibility.style.display === "none") ? "block" : "none";
+});
+</script>

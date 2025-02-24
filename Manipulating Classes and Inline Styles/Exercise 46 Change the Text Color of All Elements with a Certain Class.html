@@ -1,0 +1,8 @@
+<div class="updateColor">Text 1</div>
+<div class="updateColor">Text 2</div>
+<script>
+function updateTextColor(selector, color) {
+document.querySelectorAll(selector).forEach(el => el.style.color = color);
+}
+updateTextColor('.updateColor', 'teal');
+</script>

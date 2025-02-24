@@ -1,0 +1,8 @@
+<div id="colorCheck" style="color: red;">Color Check</div>
+<script>
+const colorCheck = document.getElementById('colorCheck');
+const computed = window.getComputedStyle(colorCheck).color;
+if (computed === "rgb(255, 0, 0)") { // red
+colorCheck.style.color = "blue";
+}
+</script>

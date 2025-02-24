@@ -1,0 +1,9 @@
+<div id="toggleDiv">Toggle my class</div>
+<button id="toggleBtn">Toggle Class</button>
+<script>
+const toggleDiv = document.getElementById('toggleDiv');
+document.getElementById('toggleBtn').addEventListener('click', () => {
+toggleDiv.classList.toggle("active");
+console.log("Classes:", toggleDiv.className);
+});
+</script>

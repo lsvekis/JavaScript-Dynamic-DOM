@@ -1,0 +1,10 @@
+<div id="animateDiv" style="width: 50px; height: 20px; background-color: orange;">Animate me</div>
+<script>
+const animateDiv = document.getElementById('animateDiv');
+let width = 50;
+const interval = setInterval(() => {
+width += 5;
+animateDiv.style.width = width + "px";
+if (width >= 150) clearInterval(interval);
+}, 100);
+</script>

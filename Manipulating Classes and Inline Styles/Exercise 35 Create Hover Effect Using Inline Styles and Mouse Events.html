@@ -1,0 +1,10 @@
+<div id="hoverEffect" style="padding:20px; border: 1px solid black;">Hover over me</div>
+<script>
+const hoverEffect = document.getElementById('hoverEffect');
+hoverEffect.addEventListener('mouseover', () => {
+hoverEffect.style.border = "3px dashed blue";
+});
+hoverEffect.addEventListener('mouseout', () => {
+hoverEffect.style.border = "1px solid black";
+});
+</script>

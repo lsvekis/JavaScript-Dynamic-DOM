@@ -1,0 +1,9 @@
+<div class="check">Test 1</div>
+<div class="check active">Test 2</div>
+<script>
+function hasAnyClass(selector, className) {
+const elements = document.querySelectorAll(selector);
+return Array.from(elements).some(el => el.classList.contains(className));
+}
+console.log("At least one has 'active':", hasAnyClass('.check', 'active'));
+</script>

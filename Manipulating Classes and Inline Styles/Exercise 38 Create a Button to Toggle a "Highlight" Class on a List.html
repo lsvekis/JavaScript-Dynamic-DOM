@@ -1,0 +1,11 @@
+<ul id="listToggle">
+<li>Alpha</li>
+<li>Beta</li>
+<li>Gamma</li>
+</ul>
+<button id="highlightBtn">Toggle Highlight</button>
+<script>
+document.getElementById('highlightBtn').addEventListener('click', () => {
+document.querySelectorAll('#listToggle li').forEach(item => item.classList.toggle("highlight"));
+});
+</script>

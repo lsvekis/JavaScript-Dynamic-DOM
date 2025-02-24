@@ -1,0 +1,10 @@
+<div id="hoverDiv">Hover over me</div>
+<script>
+const hoverDiv = document.getElementById('hoverDiv');
+hoverDiv.addEventListener('mouseenter', () => {
+hoverDiv.classList.add("hovered");
+});
+hoverDiv.addEventListener('mouseleave', () => {
+hoverDiv.classList.remove("hovered");
+});
+</script>

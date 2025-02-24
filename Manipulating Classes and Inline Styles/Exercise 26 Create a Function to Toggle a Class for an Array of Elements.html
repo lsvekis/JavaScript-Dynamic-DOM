@@ -1,0 +1,9 @@
+<div class="toggle">One</div>
+<div class="toggle">Two</div>
+<script>
+function toggleClassForAll(selector, className) {
+const elements = document.querySelectorAll(selector);
+elements.forEach(el => el.classList.toggle(className));
+}
+toggleClassForAll('.toggle', 'active');
+</script>

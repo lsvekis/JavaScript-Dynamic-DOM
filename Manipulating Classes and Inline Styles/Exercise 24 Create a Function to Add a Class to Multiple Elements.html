@@ -1,0 +1,9 @@
+<div class="item">Item 1</div>
+<div class="item">Item 2</div>
+<script>
+function addClassToAll(selector, className) {
+const elements = document.querySelectorAll(selector);
+elements.forEach(el => el.classList.add(className));
+}
+addClassToAll('.item', 'highlight');
+</script>

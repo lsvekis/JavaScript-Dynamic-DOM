@@ -1,0 +1,13 @@
+<nav id="navBar">Responsive Nav</nav>
+<script>
+function updateNavClass() {
+const nav = document.getElementById('navBar');
+if (window.innerWidth < 600) {
+nav.classList.add("mobile");
+} else {
+nav.classList.remove("mobile");
+}
+}
+window.addEventListener('resize', updateNavClass);
+updateNavClass();
+</script>

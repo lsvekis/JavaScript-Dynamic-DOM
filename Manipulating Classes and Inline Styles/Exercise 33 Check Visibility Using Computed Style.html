@@ -1,0 +1,6 @@
+<div id="visibilityCheck" style="display: block;">I might be hidden</div>
+<script>
+const visCheck = document.getElementById('visibilityCheck');
+const visStyle = window.getComputedStyle(visCheck).display;
+console.log("Is visible?", visStyle !== "none");
+</script>

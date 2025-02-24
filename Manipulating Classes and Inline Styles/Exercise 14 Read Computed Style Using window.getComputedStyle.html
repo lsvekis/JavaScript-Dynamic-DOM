@@ -1,0 +1,9 @@
+<style>
+#computedDiv { background-color: coral; }
+</style>
+<div id="computedDiv">Computed Style</div>
+<script>
+const computedDiv = document.getElementById('computedDiv');
+const computedStyle = window.getComputedStyle(computedDiv);
+console.log("Computed background color:", computedStyle.backgroundColor);
+</script>

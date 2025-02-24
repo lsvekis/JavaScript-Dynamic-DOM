@@ -1,0 +1,9 @@
+<div id="conditionalDiv" style="background-color: red;">Conditional Class</div>
+<script>
+const conditionalDiv = document.getElementById('conditionalDiv');
+const compStyle = window.getComputedStyle(conditionalDiv);
+if (compStyle.backgroundColor === "rgb(255, 0, 0)") {
+conditionalDiv.classList.add("alert");
+}
+console.log("Classes:", conditionalDiv.className);
+</script>

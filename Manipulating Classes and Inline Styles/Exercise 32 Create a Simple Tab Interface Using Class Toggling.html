@@ -1,0 +1,14 @@
+<button id="tab1">Tab 1</button>
+<button id="tab2">Tab 2</button>
+<div id="content1" class="tab-content active">Content for Tab 1</div>
+<div id="content2" class="tab-content">Content for Tab 2</div>
+<script>
+document.getElementById('tab1').addEventListener('click', () => {
+document.getElementById('content1').classList.add("active");
+document.getElementById('content2').classList.remove("active");
+});
+document.getElementById('tab2').addEventListener('click', () => {
+document.getElementById('content2').classList.add("active");
+document.getElementById('content1').classList.remove("active");
+});
+</script>

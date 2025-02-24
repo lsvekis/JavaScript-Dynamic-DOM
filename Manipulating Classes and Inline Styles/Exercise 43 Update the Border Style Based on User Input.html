@@ -1,0 +1,9 @@
+<input id="borderInput" placeholder="Enter border style, e.g., '2px dashed blue'">
+<div id="borderDiv" style="padding: 10px;">Border Me</div>
+<script>
+const borderInput = document.getElementById('borderInput');
+const borderDiv = document.getElementById('borderDiv');
+borderInput.addEventListener('input', () => {
+borderDiv.style.border = borderInput.value;
+});
+</script>

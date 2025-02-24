@@ -1,0 +1,12 @@
+<div id="summaryElement" class="box highlighted" style="color: blue; padding: 10px;">
+Summary Element
+</div>
+<div id="summaryOutput"></div>
+<script>
+const summaryElement = document.getElementById('summaryElement');
+const summaryOutput = document.getElementById('summaryOutput');
+summaryOutput.innerHTML = `
+<p>Classes: ${summaryElement.className}</p>
+<p>Inline Styles: ${summaryElement.getAttribute('style')}</p>
+`;
+</script>

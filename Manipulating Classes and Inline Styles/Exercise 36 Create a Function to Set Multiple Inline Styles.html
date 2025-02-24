@@ -1,0 +1,10 @@
+<div id="multiStyle">Style me in bulk</div>
+<script>
+function setStyles(el, styles) {
+for (let prop in styles) {
+el.style[prop] = styles[prop];
+}
+}
+const multiStyle = document.getElementById('multiStyle');
+setStyles(multiStyle, { color: "white", backgroundColor: "black", padding: "15px" });
+</script>

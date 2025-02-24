@@ -1,0 +1,9 @@
+<p id="responsivePara">I change size on resize</p>
+<script>
+function updateFontSize() {
+const newSize = Math.max(window.innerWidth / 100, 12) + "px";
+document.getElementById('responsivePara').style.fontSize = newSize;
+}
+window.addEventListener('resize', updateFontSize);
+updateFontSize();
+</script>

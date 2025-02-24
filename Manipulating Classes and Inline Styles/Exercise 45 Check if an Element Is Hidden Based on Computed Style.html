@@ -1,0 +1,7 @@
+<div id="hiddenTest" style="display: none;">Hidden Element</div>
+<script>
+function isHidden(el) {
+return window.getComputedStyle(el).display === "none";
+}
+console.log("Is hiddenTest hidden?", isHidden(document.getElementById('hiddenTest')));
+</script>
