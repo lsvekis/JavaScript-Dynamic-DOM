@@ -1,0 +1,12 @@
+In this section you’ll learn how to attach and manage event listeners, work with the event object, understand how events flow (capturing vs. bubbling), use event delegation to efficiently handle events on dynamic elements, and prevent default behaviors or stop propagation when needed.
+Topics Covered:
+Basic Event Listeners: Attaching events with addEventListener.
+The Event Object: Accessing event properties (like event.target, event.type) and understanding different event types.
+Event Flow: Learning the difference between capturing and bubbling and controlling event flow.
+Event Delegation: Handling events on dynamically created elements by delegating to a parent.
+Preventing Defaults: Using preventDefault and stopPropagation (and even stopImmediatePropagation) to control event behavior.
+Learning Objectives:
+Add and manage event listeners for various user interactions.
+Distinguish between event phases (capturing, target, bubbling).
+Implement event delegation to optimize performance.
+Below are 50 coding exercises that will guide you step-by-step through these concepts. Each exercise includes a brief learning objective, clear instructions, and starter code to get you coding.
