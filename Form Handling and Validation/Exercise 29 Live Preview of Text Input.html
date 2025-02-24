@@ -1,0 +1,7 @@
+<input type="text" id="previewInput" placeholder="Type here">
+<div id="livePreview">Live preview: </div>
+<script>
+document.getElementById('previewInput').addEventListener('input', (event) => {
+document.getElementById('livePreview').innerText = "Live preview: " + event.target.value;
+});
+</script>

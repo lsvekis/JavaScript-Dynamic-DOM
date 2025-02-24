@@ -1,0 +1,11 @@
+<input type="text" id="blurInput" placeholder="Should not be empty">
+<div id="blurFeedback" style="color:red;"></div>
+<script>
+document.getElementById('blurInput').addEventListener('blur', (event) => {
+if (event.target.value.trim() === "") {
+document.getElementById('blurFeedback').innerText = "This field cannot be empty.";
+} else {
+document.getElementById('blurFeedback').innerText = "";
+}
+});
+</script>

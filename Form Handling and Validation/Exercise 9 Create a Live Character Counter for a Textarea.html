@@ -1,0 +1,7 @@
+<textarea id="charTextarea" rows="4" cols="50" placeholder="Type here..."></textarea>
+<div id="charCount">0 characters</div>
+<script>
+document.getElementById('charTextarea').addEventListener('input', (event) => {
+document.getElementById('charCount').innerText = event.target.value.length + " characters";
+});
+</script>

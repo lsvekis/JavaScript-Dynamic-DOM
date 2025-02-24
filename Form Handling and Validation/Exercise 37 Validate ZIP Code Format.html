@@ -1,0 +1,12 @@
+<input type="text" id="zipInput" placeholder="Enter ZIP code">
+<div id="zipFeedback" style="color:red;"></div>
+<script>
+document.getElementById('zipInput').addEventListener('input', (event) => {
+const zipRegex = /^\d{5}$/;
+if (!zipRegex.test(event.target.value)) {
+document.getElementById('zipFeedback').innerText = "ZIP code must be 5 digits.";
+} else {
+document.getElementById('zipFeedback').innerText = "";
+}
+});
+</script>

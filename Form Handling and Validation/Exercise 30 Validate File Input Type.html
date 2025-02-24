@@ -1,0 +1,12 @@
+<input type="file" id="fileInput">
+<div id="fileFeedback" style="color:red;"></div>
+<script>
+document.getElementById('fileInput').addEventListener('change', (event) => {
+const file = event.target.files[0];
+if (file && !file.type.startsWith("image/")) {
+document.getElementById('fileFeedback').innerText = "Please select an image file.";
+} else {
+document.getElementById('fileFeedback').innerText = "";
+}
+});
+</script>

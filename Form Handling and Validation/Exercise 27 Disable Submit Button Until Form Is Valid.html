@@ -1,0 +1,11 @@
+<form id="disableForm">
+<input type="text" id="requiredField" placeholder="Required">
+<button type="submit" id="submitBtn" disabled>Submit</button>
+</form>
+<script>
+const requiredField = document.getElementById('requiredField');
+const submitBtn = document.getElementById('submitBtn');
+requiredField.addEventListener('input', () => {
+submitBtn.disabled = requiredField.value.trim() === "";
+});
+</script>

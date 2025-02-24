@@ -1,0 +1,14 @@
+<input type="text" id="usernameCheck" placeholder="Choose a username">
+<div id="usernameFeedback"></div>
+<script>
+let timeout;
+document.getElementById('usernameCheck').addEventListener('input', (event) => {
+clearTimeout(timeout);
+const username = event.target.value;
+timeout = setTimeout(() => {
+// Simulate check: usernames with less than 5 characters are taken
+const available = username.length >= 5;
+document.getElementById('usernameFeedback').innerText = available ? "Username available" : "Username taken";
+}, 500);
+});
+</script>

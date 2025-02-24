@@ -1,0 +1,15 @@
+<input type="text" id="debounceInput" placeholder="Debounced validation">
+<div id="debounceFeedback" style="color:red;"></div>
+<script>
+let debounceTimer;
+document.getElementById('debounceInput').addEventListener('input', (event) => {
+clearTimeout(debounceTimer);
+debounceTimer = setTimeout(() => {
+if (event.target.value.trim() === "") {
+document.getElementById('debounceFeedback').innerText = "Field cannot be empty.";
+} else {
+document.getElementById('debounceFeedback').innerText = "";
+}
+}, 500);
+});
+</script>

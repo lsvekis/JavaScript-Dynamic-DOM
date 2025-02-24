@@ -1,0 +1,10 @@
+<input type="text" id="customValidityInput" placeholder="Enter text" required>
+<script>
+const customInput = document.getElementById('customValidityInput');
+customInput.addEventListener('invalid', (event) => {
+event.target.setCustomValidity("Please fill out this field correctly.");
+});
+customInput.addEventListener('input', (event) => {
+event.target.setCustomValidity("");
+});
+</script>

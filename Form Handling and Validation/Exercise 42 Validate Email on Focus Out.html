@@ -1,0 +1,12 @@
+<input type="email" id="focusEmail" placeholder="Enter your email">
+<div id="focusEmailFeedback" style="color:red;"></div>
+<script>
+document.getElementById('focusEmail').addEventListener('focusout', (event) => {
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(event.target.value)) {
+document.getElementById('focusEmailFeedback').innerText = "Invalid email format.";
+} else {
+document.getElementById('focusEmailFeedback').innerText = "";
+}
+});
+</script>

@@ -1,0 +1,13 @@
+<input type="text" id="requiredInput" placeholder="Required field">
+<div id="emptyWarning" style="color: red;"></div>
+<script>
+const inputField = document.getElementById('requiredInput');
+const warningDiv = document.getElementById('emptyWarning');
+inputField.addEventListener('input', () => {
+if (inputField.value.trim() === "") {
+warningDiv.innerText = "This field cannot be empty!";
+} else {
+warningDiv.innerText = "";
+}
+});
+</script>

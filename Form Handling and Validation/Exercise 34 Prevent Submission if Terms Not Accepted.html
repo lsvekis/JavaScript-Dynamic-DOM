@@ -1,0 +1,17 @@
+<form id="termsForm">
+<label><input type="checkbox" id="termsCheckbox"> I agree to the terms and conditions</label>
+<button type="submit">Submit</button>
+</form>
+<div id="termsFeedback" style="color:red;"></div>
+<script>
+document.getElementById('termsForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const checkbox = document.getElementById('termsCheckbox');
+if (!checkbox.checked) {
+document.getElementById('termsFeedback').innerText = "You must agree to the terms.";
+} else {
+document.getElementById('termsFeedback').innerText = "";
+console.log("Form submitted");
+}
+});
+</script>

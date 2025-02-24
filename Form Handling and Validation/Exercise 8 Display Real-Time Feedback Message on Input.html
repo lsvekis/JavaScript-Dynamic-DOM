@@ -1,0 +1,7 @@
+<input type="text" id="feedbackInput" placeholder="Type something">
+<div id="feedbackMsg"></div>
+<script>
+document.getElementById('feedbackInput').addEventListener('input', (event) => {
+document.getElementById('feedbackMsg').innerText = "You typed: " + event.target.value;
+});
+</script>

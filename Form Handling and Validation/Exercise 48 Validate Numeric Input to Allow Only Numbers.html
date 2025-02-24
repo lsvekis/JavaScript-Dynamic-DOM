@@ -1,0 +1,9 @@
+<input type="text" id="numericInput" placeholder="Numbers only">
+<script>
+document.getElementById('numericInput').addEventListener('keydown', (event) => {
+if (!/[0-9]/.test(event.key) && event.key !== "Backspace" && event.key !== "ArrowLeft" && event.key !== "ArrowRight") {
+event.preventDefault();
+console.log("Only numbers allowed");
+}
+});
+</script>

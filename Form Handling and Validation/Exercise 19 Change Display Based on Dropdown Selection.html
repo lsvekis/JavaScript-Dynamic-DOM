@@ -1,0 +1,18 @@
+<select id="infoSelect">
+<option value="none">Select an option</option>
+<option value="option1">Option 1</option>
+<option value="option2">Option 2</option>
+</select>
+<div id="selectFeedback"></div>
+<script>
+document.getElementById('infoSelect').addEventListener('change', (event) => {
+const feedback = document.getElementById('selectFeedback');
+if (event.target.value === "option1") {
+feedback.innerText = "You selected Option 1: Additional details...";
+} else if (event.target.value === "option2") {
+feedback.innerText = "You selected Option 2: More information here.";
+} else {
+feedback.innerText = "";
+}
+});
+</script>

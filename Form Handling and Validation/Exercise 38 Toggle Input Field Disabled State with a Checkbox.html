@@ -1,0 +1,7 @@
+<label><input type="checkbox" id="toggleDisable"> Enable input field</label>
+<input type="text" id="toggleInput" placeholder="This may be disabled" disabled>
+<script>
+document.getElementById('toggleDisable').addEventListener('change', (event) => {
+document.getElementById('toggleInput').disabled = !event.target.checked;
+});
+</script>

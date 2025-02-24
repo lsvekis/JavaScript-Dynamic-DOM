@@ -1,0 +1,21 @@
+<form id="removableForm">
+<input type="text" name="field1" placeholder="Field 1">
+</form>
+<button id="addRemovableField">Add Field with Remove</button>
+<script>
+document.getElementById('addRemovableField').addEventListener('click', () => {
+const form = document.getElementById('removableForm');
+const wrapper = document.createElement('div');
+const newField = document.createElement('input');
+newField.type = "text";
+newField.name = "field" + (form.elements.length + 1);
+newField.placeholder = "New Field";
+const removeBtn = document.createElement('button');
+removeBtn.type = "button";
+removeBtn.innerText = "Remove";
+removeBtn.addEventListener('click', () => wrapper.remove());
+wrapper.appendChild(newField);
+wrapper.appendChild(removeBtn);
+form.appendChild(wrapper);
+});
+</script>

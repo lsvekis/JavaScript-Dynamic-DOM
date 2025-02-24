@@ -1,0 +1,10 @@
+<form id="delegatedForm">
+<input type="text" name="firstName" placeholder="First Name">
+<input type="text" name="lastName" placeholder="Last Name">
+<input type="email" name="email" placeholder="Email">
+</form>
+<script>
+document.getElementById('delegatedForm').addEventListener('input', (event) => {
+console.log(`Field ${event.target.name} changed to:`, event.target.value);
+});
+</script>

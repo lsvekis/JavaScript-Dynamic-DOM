@@ -1,0 +1,14 @@
+<input type="email" id="emailInput" placeholder="Enter your email">
+<div id="emailFeedback" style="color: red;"></div>
+<script>
+const emailInput = document.getElementById('emailInput');
+const emailFeedback = document.getElementById('emailFeedback');
+emailInput.addEventListener('input', () => {
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(emailInput.value)) {
+emailFeedback.innerText = "Invalid email format";
+} else {
+emailFeedback.innerText = "";
+}
+});
+</script>

@@ -1,0 +1,12 @@
+<input type="text" id="ccInput" placeholder="Enter 16-digit card number">
+<div id="ccFeedback" style="color:red;"></div>
+<script>
+document.getElementById('ccInput').addEventListener('input', (event) => {
+const ccRegex = /^\d{16}$/;
+if (!ccRegex.test(event.target.value)) {
+document.getElementById('ccFeedback').innerText = "Credit card number must be 16 digits.";
+} else {
+document.getElementById('ccFeedback').innerText = "";
+}
+});
+</script>

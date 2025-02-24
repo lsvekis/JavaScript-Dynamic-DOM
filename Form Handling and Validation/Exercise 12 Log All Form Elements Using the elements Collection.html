@@ -1,0 +1,9 @@
+<form id="allElementsForm">
+<input type="text" name="firstName" placeholder="First Name">
+<input type="text" name="lastName" placeholder="Last Name">
+<input type="email" name="email" placeholder="Email">
+</form>
+<script>
+const formElements = document.getElementById('allElementsForm').elements;
+Array.from(formElements).forEach(el => console.log("Element:", el.name));
+</script>

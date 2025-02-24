@@ -1,0 +1,13 @@
+<input type="number" id="ageInput" min="18" max="65" placeholder="Enter your age">
+<div id="ageFeedback" style="color: red;"></div>
+<script>
+const ageInput = document.getElementById('ageInput');
+const ageFeedback = document.getElementById('ageFeedback');
+ageInput.addEventListener('input', () => {
+if (ageInput.value < 18 || ageInput.value > 65) {
+ageFeedback.innerText = "Age must be between 18 and 65";
+} else {
+ageFeedback.innerText = "";
+}
+});
+</script>

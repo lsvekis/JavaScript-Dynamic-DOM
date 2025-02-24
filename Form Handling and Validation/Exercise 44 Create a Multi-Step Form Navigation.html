@@ -1,0 +1,18 @@
+<div id="step1">
+<input type="text" placeholder="Step 1 Field">
+<button id="toStep2">Next</button>
+</div>
+<div id="step2" style="display:none;">
+<input type="text" placeholder="Step 2 Field">
+<button id="backToStep1">Back</button>
+</div>
+<script>
+document.getElementById('toStep2').addEventListener('click', () => {
+document.getElementById('step1').style.display = "none";
+document.getElementById('step2').style.display = "block";
+});
+document.getElementById('backToStep1').addEventListener('click', () => {
+document.getElementById('step2').style.display = "none";
+document.getElementById('step1').style.display = "block";
+});
+</script>

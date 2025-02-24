@@ -1,0 +1,7 @@
+<input type="text" id="inlineError" placeholder="Cannot be empty">
+<span id="errorMessage" style="color:red;"></span>
+<script>
+document.getElementById('inlineError').addEventListener('blur', (event) => {
+document.getElementById('errorMessage').innerText = event.target.value.trim() === "" ? "This field is required." : "";
+});
+</script>

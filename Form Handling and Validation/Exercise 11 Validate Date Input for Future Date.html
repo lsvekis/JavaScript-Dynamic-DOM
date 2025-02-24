@@ -1,0 +1,14 @@
+<input type="date" id="futureDate">
+<div id="dateFeedback" style="color: red;"></div>
+<script>
+document.getElementById('futureDate').addEventListener('change', (event) => {
+const selectedDate = new Date(event.target.value);
+const today = new Date();
+today.setHours(0,0,0,0);
+if (selectedDate <= today) {
+document.getElementById('dateFeedback').innerText = "Please select a future date.";
+} else {
+document.getElementById('dateFeedback').innerText = "";
+}
+});
+</script>

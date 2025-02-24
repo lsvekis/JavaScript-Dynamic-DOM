@@ -1,0 +1,12 @@
+<select id="extraSelect">
+<option value="">Select an option</option>
+<option value="other">Other</option>
+</select>
+<div id="extraField" style="display:none;">
+<input type="text" placeholder="Please specify">
+</div>
+<script>
+document.getElementById('extraSelect').addEventListener('change', (event) => {
+document.getElementById('extraField').style.display = event.target.value === "other" ? "block" : "none";
+});
+</script>

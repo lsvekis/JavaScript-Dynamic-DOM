@@ -1,0 +1,14 @@
+<form id="radioForm">
+<label><input type="radio" name="choice" value="A"> Choice A</label>
+<label><input type="radio" name="choice" value="B"> Choice B</label>
+<button type="submit">Submit</button>
+</form>
+<div id="radioFeedback" style="color:red;"></div>
+<script>
+document.getElementById('radioForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const radios = document.querySelectorAll('input[name="choice"]');
+const selected = Array.from(radios).some(radio => radio.checked);
+document.getElementById('radioFeedback').innerText = selected ? "" : "Please select an option.";
+});
+</script>

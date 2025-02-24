@@ -1,0 +1,13 @@
+<form id="validationForm">
+<input type="text" id="nameInput" placeholder="Enter your name" required>
+<button type="submit">Submit</button>
+</form>
+<script>
+document.getElementById('validationForm').addEventListener('submit', (event) => {
+const nameInput = document.getElementById('nameInput');
+if (nameInput.value.trim() === "") {
+event.preventDefault();
+console.log("Form submission prevented: Name is required");
+}
+});
+</script>

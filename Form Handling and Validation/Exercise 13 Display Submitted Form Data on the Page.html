@@ -1,0 +1,17 @@
+<form id="displayForm">
+<input type="text" name="username" placeholder="Username">
+<input type="email" name="useremail" placeholder="Email">
+<button type="submit">Submit</button>
+</form>
+<div id="formDataOutput"></div>
+<script>
+document.getElementById('displayForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const formData = new FormData(event.target);
+let output = "";
+formData.forEach((value, key) => {
+output += `<p>${key}: ${value}</p>`;
+});
+document.getElementById('formDataOutput').innerHTML = output;
+});
+</script>

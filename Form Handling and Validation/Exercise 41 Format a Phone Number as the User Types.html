@@ -1,0 +1,12 @@
+<input type="text" id="formatPhone" placeholder="1234567890">
+<script>
+document.getElementById('formatPhone').addEventListener('input', (event) => {
+let value = event.target.value.replace(/\D/g, '');
+if (value.length > 3 && value.length <= 6) {
+value = value.replace(/(\d{3})(\d+)/, '$1-$2');
+} else if (value.length > 6) {
+value = value.replace(/(\d{3})(\d{3})(\d+)/, '$1-$2-$3');
+}
+event.target.value = value;
+});
+</script>

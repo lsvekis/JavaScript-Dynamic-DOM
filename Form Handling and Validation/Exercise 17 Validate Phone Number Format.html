@@ -1,0 +1,12 @@
+<input type="text" id="phoneInput" placeholder="Enter phone number">
+<div id="phoneFeedback" style="color: red;"></div>
+<script>
+document.getElementById('phoneInput').addEventListener('input', (event) => {
+const phoneRegex = /^\d{3}-\d{3}-\d{4}$/; // format: 123-456-7890
+if (!phoneRegex.test(event.target.value)) {
+document.getElementById('phoneFeedback').innerText = "Phone number must be in format 123-456-7890";
+} else {
+document.getElementById('phoneFeedback').innerText = "";
+}
+});
+</script>

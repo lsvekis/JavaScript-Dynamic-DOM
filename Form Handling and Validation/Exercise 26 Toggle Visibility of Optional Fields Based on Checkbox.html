@@ -1,0 +1,9 @@
+<label><input type="checkbox" id="toggleOptional"> Show additional info</label>
+<div id="optionalField" style="display: none;">
+<input type="text" placeholder="Additional info">
+</div>
+<script>
+document.getElementById('toggleOptional').addEventListener('change', (event) => {
+document.getElementById('optionalField').style.display = event.target.checked ? "block" : "none";
+});
+</script>

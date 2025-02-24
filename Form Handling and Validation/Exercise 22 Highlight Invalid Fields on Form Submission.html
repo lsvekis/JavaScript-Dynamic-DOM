@@ -1,0 +1,17 @@
+<form id="highlightForm">
+<input type="text" id="highlightInput" placeholder="Required field">
+<button type="submit">Submit</button>
+</form>
+<script>
+document.getElementById('highlightForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const inputField = document.getElementById('highlightInput');
+if (inputField.value.trim() === "") {
+inputField.style.border = "2px solid red";
+console.log("Field is invalid");
+} else {
+inputField.style.border = "";
+console.log("Field is valid");
+}
+});
+</script>

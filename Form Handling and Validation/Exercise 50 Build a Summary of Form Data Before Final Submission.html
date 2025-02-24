@@ -1,0 +1,17 @@
+<form id="summaryForm">
+<input type="text" name="username" placeholder="Username">
+<input type="email" name="email" placeholder="Email">
+<button type="submit">Submit</button>
+</form>
+<div id="summaryDisplay" style="border:1px solid #ccc; padding:10px; margin-top:10px;"></div>
+<script>
+document.getElementById('summaryForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const formData = new FormData(event.target);
+let summary = "<h3>Form Summary:</h3>";
+formData.forEach((value, key) => {
+summary += `<p><strong>${key}:</strong> ${value}</p>`;
+});
+document.getElementById('summaryDisplay').innerHTML = summary;
+});
+</script>

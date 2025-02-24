@@ -1,0 +1,12 @@
+<input type="text" id="lengthInput" placeholder="5-10 characters">
+<div id="lengthFeedback" style="color:red;"></div>
+<script>
+document.getElementById('lengthInput').addEventListener('input', (event) => {
+const len = event.target.value.length;
+if (len < 5 || len > 10) {
+document.getElementById('lengthFeedback').innerText = "Input must be between 5 and 10 characters";
+} else {
+document.getElementById('lengthFeedback').innerText = "";
+}
+});
+</script>

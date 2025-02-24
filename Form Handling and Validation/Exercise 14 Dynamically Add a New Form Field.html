@@ -1,0 +1,14 @@
+<form id="dynamicForm">
+<input type="text" name="field1" placeholder="Field 1">
+</form>
+<button id="addFieldBtn">Add Field</button>
+<script>
+document.getElementById('addFieldBtn').addEventListener('click', () => {
+const form = document.getElementById('dynamicForm');
+const newField = document.createElement('input');
+newField.type = "text";
+newField.name = "field" + (form.elements.length + 1);
+newField.placeholder = "New Field";
+form.appendChild(newField);
+});
+</script>

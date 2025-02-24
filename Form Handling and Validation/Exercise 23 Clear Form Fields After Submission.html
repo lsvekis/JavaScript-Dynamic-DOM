@@ -1,0 +1,19 @@
+<form id="clearForm">
+<input type="text" name="username" placeholder="Username">
+<input type="email" name="useremail" placeholder="Email">
+<button type="submit">Submit</button>
+</form>
+<div id="clearOutput"></div>
+<script>
+document.getElementById('clearForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const form = event.target;
+const formData = new FormData(form);
+let output = "";
+formData.forEach((value, key) => {
+output += `<p>${key}: ${value}</p>`;
+});
+document.getElementById('clearOutput').innerHTML = output;
+form.reset();
+});
+</script>

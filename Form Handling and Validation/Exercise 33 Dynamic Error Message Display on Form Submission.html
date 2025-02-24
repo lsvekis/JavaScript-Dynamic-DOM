@@ -1,0 +1,20 @@
+<form id="errorForm">
+<div>
+<input type="text" id="errorField" placeholder="Required">
+<span id="errorMsg" style="color:red;"></span>
+</div>
+<button type="submit">Submit</button>
+</form>
+<script>
+document.getElementById('errorForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const field = document.getElementById('errorField');
+const msg = document.getElementById('errorMsg');
+if (field.value.trim() === "") {
+msg.innerText = "This field is required.";
+} else {
+msg.innerText = "";
+console.log("Form submitted successfully");
+}
+});
+</script>

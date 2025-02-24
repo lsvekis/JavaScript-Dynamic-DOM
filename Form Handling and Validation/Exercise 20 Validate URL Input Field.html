@@ -1,0 +1,12 @@
+<input type="url" id="urlInput" placeholder="Enter a URL">
+<div id="urlFeedback" style="color: red;"></div>
+<script>
+document.getElementById('urlInput').addEventListener('input', (event) => {
+const urlRegex = /^(https?:\/\/)?([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/;
+if (!urlRegex.test(event.target.value)) {
+document.getElementById('urlFeedback').innerText = "Invalid URL format";
+} else {
+document.getElementById('urlFeedback').innerText = "";
+}
+});
+</script>

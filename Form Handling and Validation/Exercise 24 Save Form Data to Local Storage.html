@@ -1,0 +1,14 @@
+<form id="localStorageForm">
+<input type="text" name="user" placeholder="Username">
+<button type="submit">Save</button>
+</form>
+<script>
+document.getElementById('localStorageForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const formData = new FormData(event.target);
+formData.forEach((value, key) => {
+localStorage.setItem(key, value);
+});
+console.log("Form data saved to local storage");
+});
+</script>

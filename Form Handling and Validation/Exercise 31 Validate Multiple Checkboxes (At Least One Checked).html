@@ -1,0 +1,15 @@
+<form id="checkboxForm">
+<label><input type="checkbox" name="option" value="1"> Option 1</label>
+<label><input type="checkbox" name="option" value="2"> Option 2</label>
+<label><input type="checkbox" name="option" value="3"> Option 3</label>
+<button type="submit">Submit</button>
+</form>
+<div id="checkboxFeedback" style="color:red;"></div>
+<script>
+document.getElementById('checkboxForm').addEventListener('submit', (event) => {
+event.preventDefault();
+const checkboxes = document.querySelectorAll('input[name="option"]');
+const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+document.getElementById('checkboxFeedback').innerText = isChecked ? "" : "Select at least one option.";
+});
+</script>

@@ -1,0 +1,11 @@
+<form id="autofillForm">
+<input type="text" name="user" placeholder="Username">
+<input type="email" name="email" placeholder="Email">
+</form>
+<button id="autofillBtn">Autofill</button>
+<script>
+document.getElementById('autofillBtn').addEventListener('click', () => {
+document.querySelector('input[name="user"]').value = "JohnDoe";
+document.querySelector('input[name="email"]').value = "john@example.com";
+});
+</script>
