@@ -1,0 +1,17 @@
+<div class="summary-target">Summary will appear here</div>
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<img src="pic.jpg" alt="A picture">
+<button>Click Me</button>
+<script>
+const summaryDiv = document.querySelector('.summary-target');
+const paragraphs = document.querySelectorAll('p');
+const firstImg = document.querySelector('img');
+const button = document.querySelector('button');
+
+summaryDiv.innerHTML = `
+<p>Total paragraphs: ${paragraphs.length}</p>
+<p>First image source: ${firstImg ? firstImg.src : 'None'}</p>
+<p>Button text: ${button ? button.innerText : 'None'}</p>
+`;
+</script>

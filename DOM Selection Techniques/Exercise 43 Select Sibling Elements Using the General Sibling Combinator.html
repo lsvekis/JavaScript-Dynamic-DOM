@@ -1,0 +1,8 @@
+<h3>Header</h3>
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<script>
+// Select all paragraphs that are siblings of the header
+const siblings = document.querySelectorAll('h3 ~ p');
+siblings.forEach(sib => console.log(sib.innerText));
+</script>

@@ -1,0 +1,13 @@
+<div id="safeUpdate">Original Safe Content</div>
+<script>
+function safeUpdate(selector, text) {
+const el = document.querySelector(selector);
+if (el) {
+el.innerText = text;
+} else {
+console.log("No element matches", selector);
+}
+}
+safeUpdate('#safeUpdate', "Content Updated Safely!");
+safeUpdate('.non-existent', "Won't update");
+</script>

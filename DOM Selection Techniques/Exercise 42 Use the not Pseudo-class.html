@@ -1,0 +1,9 @@
+<ul>
+<li>Keep Me</li>
+<li class="exclude">Exclude Me</li>
+<li>Keep Me Too</li>
+</ul>
+<script>
+const filteredItems = document.querySelectorAll('li:not(.exclude)');
+filteredItems.forEach(item => item.style.color = "green");
+</script>

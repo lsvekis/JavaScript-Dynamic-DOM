@@ -1,0 +1,6 @@
+<a href="http://example.com">External Link</a>
+<a href="/local">Local Link</a>
+<script>
+const externalLinks = document.querySelectorAll('a[href^="http"]');
+externalLinks.forEach(link => link.style.borderBottom = "1px dashed red");
+</script>

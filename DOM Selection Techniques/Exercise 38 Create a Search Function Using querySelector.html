@@ -1,0 +1,8 @@
+<div id="searchItem">Found me!</div>
+<script>
+function searchElement(term) {
+return document.querySelector('#' + term);
+}
+const result = searchElement('searchItem');
+console.log(result ? result.innerText : "Not found");
+</script>
