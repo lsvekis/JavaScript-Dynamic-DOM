@@ -1,0 +1,11 @@
+In modern web development, selecting DOM elements efficiently is crucial for creating dynamic and maintainable code. In this section, you will learn how to use the powerful methods:
+document.querySelector
+Selects the first element that matches a given CSS selector.
+document.querySelectorAll
+Selects all elements that match a given CSS selector and returns a static (non-live) NodeList.
+Using CSS-style selectors, you can target elements by tag, id, class, attribute, pseudo-class, and even complex combinations. This approach makes your code more readable and flexible compared to older methods like getElementById, getElementsByClassName, or getElementsByTagName.
+Learning Objectives:
+Master various methods to select DOM elements.
+Choose the right selection method based on the scenario.
+Enhance code readability and maintainability with proper selection.
+Throughout the exercises, you’ll also learn to handle edge cases gracefully (for example, when a selector returns no elements) and compare the pros and cons of these methods.
