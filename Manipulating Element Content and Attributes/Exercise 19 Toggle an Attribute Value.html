@@ -1,0 +1,8 @@
+<button id="toggleBtn" data-state="off">Toggle State</button>
+<script>
+const toggleBtn = document.getElementById('toggleBtn');
+toggleBtn.addEventListener('click', () => {
+toggleBtn.dataset.state = toggleBtn.dataset.state === "off" ? "on" : "off";
+console.log("Current state:", toggleBtn.dataset.state);
+});
+</script>

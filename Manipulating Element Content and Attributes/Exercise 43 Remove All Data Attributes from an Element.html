@@ -1,0 +1,8 @@
+<div id="dataCleanup" data-one="1" data-two="2" data-three="3">Cleanup Data</div>
+<script>
+const dataCleanup = document.getElementById('dataCleanup');
+for (let key in dataCleanup.dataset) {
+dataCleanup.removeAttribute('data-' + key);
+}
+console.log("After cleanup:", dataCleanup.outerHTML);
+</script>

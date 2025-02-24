@@ -1,0 +1,11 @@
+<div id="multiAttrDiv">Multi-Attribute</div>
+<script>
+function setAttributes(el, attrs) {
+for (let key in attrs) {
+el.setAttribute(key, attrs[key]);
+}
+}
+const multiAttrDiv = document.getElementById('multiAttrDiv');
+setAttributes(multiAttrDiv, { 'data-info': 'test', 'title': 'Multi Attr Div' });
+console.log(multiAttrDiv.outerHTML);
+</script>

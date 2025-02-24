@@ -1,0 +1,15 @@
+<div id="profileCard"></div>
+<script>
+const profile = {
+name: "Jane Doe",
+bio: "Web Developer",
+image: "jane.jpg"
+};
+document.getElementById('profileCard').innerHTML = `
+<div class="card">
+<img src="${profile.image}" alt="${profile.name}">
+<h3>${profile.name}</h3>
+<p>${profile.bio}</p>
+</div>
+`;
+</script>

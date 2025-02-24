@@ -1,0 +1,16 @@
+<div id="summaryDisplay">Summary will be displayed here.</div>
+<p id="summaryPara">This is a sample paragraph.</p>
+<img id="summaryImg" src="sample.jpg" alt="Sample Image">
+<a id="summaryLink" href="https://example.com">Example Link</a>
+<script>
+const summaryDiv = document.getElementById('summaryDisplay');
+const paraText = document.getElementById('summaryPara').textContent;
+const imgSrc = document.getElementById('summaryImg').src;
+const linkHref = document.getElementById('summaryLink').href;
+
+summaryDiv.innerHTML = `
+<p>Paragraph: ${paraText}</p>
+<p>Image Source: ${imgSrc}</p>
+<p>Link URL: ${linkHref}</p>
+`;
+</script>

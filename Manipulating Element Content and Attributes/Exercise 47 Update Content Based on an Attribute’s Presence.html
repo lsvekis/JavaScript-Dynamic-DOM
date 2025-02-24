@@ -1,0 +1,7 @@
+<p id="conditionalUpdate" data-update="yes">Original Content</p>
+<script>
+const conditionalUpdate = document.getElementById('conditionalUpdate');
+if (conditionalUpdate.getAttribute('data-update') === "yes") {
+conditionalUpdate.textContent = "Content has been updated!";
+}
+</script>

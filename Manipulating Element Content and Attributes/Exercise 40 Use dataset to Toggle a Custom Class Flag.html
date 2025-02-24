@@ -1,0 +1,8 @@
+<div id="toggleFlag" data-active="false">Toggle Flag</div>
+<script>
+const toggleFlag = document.getElementById('toggleFlag');
+toggleFlag.addEventListener('click', () => {
+toggleFlag.dataset.active = toggleFlag.dataset.active === "false" ? "true" : "false";
+console.log("Active:", toggleFlag.dataset.active);
+});
+</script>

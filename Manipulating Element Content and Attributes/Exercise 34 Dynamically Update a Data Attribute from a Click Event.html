@@ -1,0 +1,9 @@
+<div id="clickCounter" data-clicks="0">Click me!</div>
+<script>
+const clickCounter = document.getElementById('clickCounter');
+clickCounter.addEventListener('click', () => {
+let clicks = Number(clickCounter.dataset.clicks);
+clickCounter.dataset.clicks = ++clicks;
+clickCounter.textContent = `Clicked ${clicks} times`;
+});
+</script>

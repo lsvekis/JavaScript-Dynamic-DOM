@@ -1,0 +1,7 @@
+<div id="userStatus" data-user="guest">Welcome, visitor!</div>
+<script>
+const userStatus = document.getElementById('userStatus');
+if (userStatus.dataset.user === "guest") {
+userStatus.innerHTML = "<p>Please log in to access more features.</p>";
+}
+</script>

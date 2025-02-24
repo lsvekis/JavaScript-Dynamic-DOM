@@ -1,0 +1,8 @@
+<div id="fruitList"></div>
+<script>
+const fruits = ["Apple", "Banana", "Cherry"];
+let listHTML = "<ul>";
+fruits.forEach(fruit => listHTML += `<li>${fruit}</li>`);
+listHTML += "</ul>";
+document.getElementById('fruitList').innerHTML = listHTML;
+</script>

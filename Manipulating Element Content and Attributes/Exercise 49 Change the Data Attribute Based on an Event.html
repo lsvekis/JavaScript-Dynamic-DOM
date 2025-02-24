@@ -1,0 +1,8 @@
+<div id="hoverDiv" data-hover="no">Hover over me</div>
+<script>
+const hoverDiv = document.getElementById('hoverDiv');
+hoverDiv.addEventListener('mouseover', () => {
+hoverDiv.dataset.hover = "yes";
+console.log("Data-hover:", hoverDiv.dataset.hover);
+});
+</script>

@@ -1,0 +1,11 @@
+<div id="attrFunc">Sample Div</div>
+<script>
+function setAttr(id, attr, value) {
+const el = document.getElementById(id);
+if (el) {
+el.setAttribute(attr, value);
+}
+}
+setAttr('attrFunc', 'data-role', 'admin');
+console.log(document.getElementById('attrFunc').getAttribute('data-role'));
+</script>

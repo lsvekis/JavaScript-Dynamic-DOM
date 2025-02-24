@@ -1,0 +1,5 @@
+<div id="messageDiv" data-message="Hello">Message here</div>
+<script>
+const messageDiv = document.getElementById('messageDiv');
+messageDiv.innerHTML = `<p>The message is: ${messageDiv.dataset.message}</p>`;
+</script>

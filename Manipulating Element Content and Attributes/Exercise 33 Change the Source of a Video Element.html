@@ -1,0 +1,8 @@
+<video id="videoPlayer" controls>
+<source src="video-old.mp4" type="video/mp4">
+</video>
+<script>
+const videoPlayer = document.getElementById('videoPlayer');
+videoPlayer.querySelector('source').src = "video-new.mp4";
+videoPlayer.load(); // reload video after changing source
+</script>

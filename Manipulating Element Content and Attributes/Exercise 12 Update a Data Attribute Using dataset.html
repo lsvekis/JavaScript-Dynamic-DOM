@@ -1,0 +1,7 @@
+<div id="scoreDiv" data-score="50">Score Display</div>
+<script>
+const scoreDiv = document.getElementById('scoreDiv');
+let currentScore = Number(scoreDiv.dataset.score);
+scoreDiv.dataset.score = currentScore + 10;
+console.log("Updated Score:", scoreDiv.dataset.score);
+</script>

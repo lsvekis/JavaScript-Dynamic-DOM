@@ -1,0 +1,10 @@
+<div id="updateFunc">Before update</div>
+<script>
+function updateContent(id, newContent) {
+const el = document.getElementById(id);
+if (el) {
+el.textContent = newContent;
+}
+}
+updateContent('updateFunc', "After update");
+</script>
